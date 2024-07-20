@@ -1,5 +1,5 @@
 import "./style.css";
-import "../../ext-style.css";
+import "../../app/ext-style.css";
 import "bootstrap/dist/css/bootstrap-grid.min.css"
 
 function AboutA1() {

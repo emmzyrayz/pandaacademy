@@ -1,0 +1,70 @@
+{
+  "courses": [
+    {
+      "uniqueId": "course-001",
+      "name": "Introduction to JavaScript",
+      "description": "A comprehensive course on JavaScript covering basics to advanced concepts.",
+      "shortDescription": "Learn JavaScript from scratch.",
+      "courseImg": "/img/topic1.png",
+      "numberOfTopics": 10,
+      "rating": 4.5,
+      "price": 29.99,
+      "tutorName": "John Doe",
+      "tutorId": "tutor-001",
+      "duration": "3",
+      "level": "beginner",
+      "topics": [
+        {
+          "topicId": "topic-001",
+          "topicName": "JavaScript Basics",
+          "topicDescription": "Introduction to JavaScript, variables, and data types.",
+          "topicOutline": [1, 2, 3],
+          "topicDuration": "5"
+        },
+        {
+          "topicId": "topic-002",
+          "topicName": "Control Structures",
+          "topicDescription": "Conditional statements and loops in JavaScript.",
+          "topicOutline": [4, 5, 6],
+          "topicDuration": "5"
+        },
+        {
+          "topicId": "topic-003",
+          "topicName": "Functions",
+          "topicDescription": "Understanding functions, scope, and closures.",
+          "topicOutline": [7, 8, 9],
+          "topicDuration": "5"
+        }
+      ]
+    },
+    {
+      "uniqueId": "course-002",
+      "name": "React for Beginners",
+      "description": "Learn how to build web applications using React.",
+      "shortDescription": "Beginner's guide to React.",
+      "courseImg": "/img/topic2.png",
+      "numberOfTopics": 8,
+      "rating": 4.7,
+      "price": 39.99,
+      "duration": "3",
+      "tutorName": "Jane Smith",
+      "tutorId": "tutor-002",
+      "topics": [
+        {
+          "topicId": "topic-004",
+          "topicName": "Introduction to React",
+          "topicDescription": "Understanding the basics of React.",
+          "topicOutline": [1, 2],
+          "topicDuration": "5"
+        },
+        {
+          "topicId": "topic-005",
+          "topicName": "React Components",
+          "topicDescription": "Building and using React components.",
+          "topicOutline": [3, 4],
+          "topicDuration": "5"
+        }
+      ]
+    }
+  ]
+}
