@@ -1,15 +1,16 @@
 import Link  from "next/link";
+import "./style.css"
 
 function Login() {
   return (
     <>
-      <main className="login-body" data-vide-bg="assets/img/login-bg.mp4">
+      <main className="login-body" >
         <form action="/auth/login" className="form-default" method="post">
           <div className="login-form">
             {/* Logo-login */}
             <div className="logo-login">
               <a href="/">
-                <img src="assets/img/logo/loder.png" alt="Logo" />
+                <img src="assets/img/logo/panda.png" alt="Logo" />
               </a>
             </div>
             <h2>Login Here</h2>
@@ -44,13 +45,17 @@ function Login() {
               />
             </div>
             <div className="form-input pt-30">
-              <input type="submit" name="submit" value='login' />
+              <input type="submit" name="submit" value="login" />
             </div>
 
             {/* forgotten password */}
-            <a href="/forgot-password" className="forget">Forget Password</a>
+            <a href="/forgot-password" className="forget">
+              <span className="btn btn-hero">Forgot Password</span>
+            </a>
             {/* Regsiter */}
-            <a href="/register" className="registration">Register Here</a>
+            <a href="/register" className="registration">
+              <span className="btn btn-hero">Sign up</span>
+            </a>
           </div>
         </form>
       </main>

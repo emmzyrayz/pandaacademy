@@ -1,4 +1,34 @@
+'use client';
+
+import { useEffect } from "react";
+import "./style.css";
+
 function Register() {
+   useEffect(() => {
+     const buttons = document.querySelectorAll(".btn");
+     const noClickButtons = document.querySelectorAll(".btn-no-click");
+
+     buttons.forEach((element) => {
+       const button = element as HTMLButtonElement;
+       button.onclick = () => {
+         alert("Button clicked!");
+       };
+     });
+
+     noClickButtons.forEach((element) => {
+       const button = element as HTMLButtonElement;
+       button.onclick = null;
+     });
+
+     // Cleanup function to remove all onClick handlers when the component unmounts
+     return () => {
+       buttons.forEach((element) => {
+         const button = element as HTMLButtonElement;
+         button.onclick = null;
+       });
+     };
+   }, []);
+
   return (
     <div className="login-body" data-vide-bg="assets/img/login-bg.mp4">
       {/* <!-- Login Admin --> */}
@@ -57,7 +87,7 @@ function Register() {
           </div>
           {/* <!-- Forget Password --> */}
           <a href="/login" className="registration">
-            login
+            <span className="btn btn-hero btn-no-click">Login</span>
           </a>
         </div>
       </form>
