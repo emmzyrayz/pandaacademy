@@ -22,7 +22,7 @@ function Header() {
               <div className="col-xl-2 col-lg-2">
                 <div className="logo">
                   <a href="/">
-                    <img src="assets/img/logo/logo.png" alt="" />
+                    <img src="/assets/img/logo/logo.png" alt="" />
                   </a>
                 </div>
               </div>

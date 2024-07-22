@@ -10,7 +10,7 @@ function Login() {
             {/* Logo-login */}
             <div className="logo-login">
               <a href="/">
-                <img src="assets/img/logo/panda.png" alt="Logo" />
+                <img src="/assets/img/logo/panda.png" alt="Logo" />
               </a>
             </div>
             <h2>Login Here</h2>

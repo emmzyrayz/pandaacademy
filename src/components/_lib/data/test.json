@@ -1,0 +1,268 @@
+{
+  "majors": [
+    {
+      "majorId": "1",
+      "majorName": "UI/UX Design",
+      "courses": [
+        {
+          "courseId": "1-1",
+          "courseName": "Figma",
+          "description": "Learn to design user interfaces with Figma.",
+          "shortDescription": "Figma for UI/UX Design",
+          "courseImg": "figma.jpg",
+          "numberOfTopics": 5,
+          "rating": 4.8,
+          "price": 199.99,
+          "tutor": [
+            {
+              "id": "tutor-001",
+              "name": "John Doe",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "1-1-1",
+              "topicName": "Intro to Figma",
+              "topicDescription": "Getting started with Figma."
+            },
+            {
+              "topicId": "1-1-2",
+              "topicName": "Figma Components",
+              "topicDescription": "Using components in Figma."
+            }
+          ]
+        },
+        {
+          "courseId": "1-2",
+          "courseName": "Photoshop",
+          "description": "Master graphic design with Photoshop.",
+          "shortDescription": "Photoshop for UI/UX Design",
+          "courseImg": "photoshop.jpg",
+          "numberOfTopics": 8,
+          "rating": 4.7,
+          "price": 249.99,
+          "tutor": [
+            {
+              "id": "tutor-002",
+              "name": "Smith Greg",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "1-2-1",
+              "topicName": "Intro to Photoshop",
+              "topicDescription": "Basics of Photoshop."
+            },
+            {
+              "topicId": "1-2-2",
+              "topicName": "Layers and Masks",
+              "topicDescription": "Understanding layers and masks in Photoshop."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "majorId": "2",
+      "majorName": "Frontend Web Development",
+      "courses": [
+        {
+          "courseId": "2-1",
+          "courseName": "HTML5",
+          "description": "Learn the latest HTML5 standards.",
+          "shortDescription": "HTML5 for Frontend Development",
+          "courseImg": "html5.jpg",
+          "numberOfTopics": 10,
+          "rating": 4.9,
+          "price": 99.99,
+          "tutor": [
+            {
+              "id": "tutor-003",
+              "name": "Alice Johnson",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "2-1-1",
+              "topicName": "Intro to HTML",
+              "topicDescription": "Getting started with HTML."
+            },
+            {
+              "topicId": "2-1-2",
+              "topicName": "HTML Tags",
+              "topicDescription": "Learning various HTML tags."
+            }
+          ]
+        },
+        {
+          "courseId": "2-2",
+          "courseName": "CSS3",
+          "description": "Master CSS3 for modern web design.",
+          "shortDescription": "CSS3 for Frontend Development",
+          "courseImg": "css3.jpg",
+          "numberOfTopics": 12,
+          "rating": 4.8,
+          "price": 119.99,
+          "tutor": [
+            {
+              "id": "tutor-004",
+              "name": "Bob Brown",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "2-2-1",
+              "topicName": "Intro to CSS",
+              "topicDescription": "Getting started with CSS."
+            },
+            {
+              "topicId": "2-2-2",
+              "topicName": "CSS Grid",
+              "topicDescription": "Learning CSS Grid layout."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "majorId": "3",
+      "majorName": "Backend Development",
+      "courses": [
+        {
+          "courseId": "3-1",
+          "courseName": "Node.js",
+          "description": "Learn server-side development with Node.js.",
+          "shortDescription": "Node.js for Backend Development",
+          "courseImg": "nodejs.jpg",
+          "numberOfTopics": 15,
+          "rating": 4.9,
+          "price": 149.99,
+          "tutor": [
+            {
+              "id": "tutor-005",
+              "name": "Charles Davies",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "3-1-1",
+              "topicName": "Intro to Node.js",
+              "topicDescription": "Getting started with Node.js."
+            },
+            {
+              "topicId": "3-1-2",
+              "topicName": "Node.js Modules",
+              "topicDescription": "Understanding modules in Node.js."
+            }
+          ]
+        },
+        {
+          "courseId": "3-2",
+          "courseName": "Express.js",
+          "description": "Build web applications with Express.js.",
+          "shortDescription": "Express.js for Backend Development",
+          "courseImg": "expressjs.jpg",
+          "numberOfTopics": 12,
+          "rating": 4.7,
+          "price": 129.99,
+          "tutor": [
+            {
+              "id": "tutor-006",
+              "name": "Dana Evans",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "3-2-1",
+              "topicName": "Intro to Express.js",
+              "topicDescription": "Getting started with Express.js."
+            },
+            {
+              "topicId": "3-2-2",
+              "topicName": "Express.js Routing",
+              "topicDescription": "Understanding routing in Express.js."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

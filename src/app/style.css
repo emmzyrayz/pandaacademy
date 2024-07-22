@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap");
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     /* Change the color as needed for visibility */
     box-sizing: border-box;
     padding: 0;
@@ -10,6 +10,10 @@
 
 body {
     overflow-x: hidden !important;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .white-bg {

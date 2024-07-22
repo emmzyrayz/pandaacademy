@@ -10,7 +10,7 @@ function ForgotPassword() {
         {/* <!-- logo-login --> */}
         <div className="logo-login">
           <a href="/">
-            <img src="assets/img/logo/panda.png" alt="" />
+            <img src="/assets/img/logo/panda.png" alt="" />
           </a>
         </div>
         <h2>Forgot Password?</h2>

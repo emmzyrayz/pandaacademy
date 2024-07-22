@@ -1,5 +1,5 @@
 import {notFound} from "next/navigation";
-export default function TopicDetail({
+export default function courseDetail({
   params,
 }: {
   params: {

@@ -1,8 +1,8 @@
-'use client';
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+"use client";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {TiArrowLeft, TiArrowRight} from "react-icons/ti";
 import "./style.css";
 
@@ -76,7 +76,7 @@ function Experts() {
         <Slider className="team-active" {...settings}>
           <div className="single-cat text-center">
             <div className="cat-icon">
-              <img src="assets/img/gallery/team1.png" alt="" />
+              <img src="/assets/img/gallery/team1.png" alt="" />
             </div>
             <div className="cat-cap">
               <h5>
@@ -87,7 +87,7 @@ function Experts() {
           </div>
           <div className="single-cat text-center">
             <div className="cat-icon">
-              <img src="assets/img/gallery/team2.png" alt="" />
+              <img src="/assets/img/gallery/team2.png" alt="" />
             </div>
             <div className="cat-cap">
               <h5>
@@ -98,7 +98,7 @@ function Experts() {
           </div>
           <div className="single-cat text-center">
             <div className="cat-icon">
-              <img src="assets/img/gallery/team3.png" alt="" />
+              <img src="/assets/img/gallery/team3.png" alt="" />
             </div>
             <div className="cat-cap">
               <h5>
@@ -109,7 +109,7 @@ function Experts() {
           </div>
           <div className="single-cat text-center">
             <div className="cat-icon">
-              <img src="assets/img/gallery/team4.png" alt="" />
+              <img src="/assets/img/gallery/team4.png" alt="" />
             </div>
             <div className="cat-cap">
               <h5>
@@ -120,7 +120,7 @@ function Experts() {
           </div>
           <div className="single-cat text-center">
             <div className="cat-icon">
-              <img src="assets/img/gallery/team3.png" alt="" />
+              <img src="/assets/img/gallery/team3.png" alt="" />
             </div>
             <div className="cat-cap">
               <h5>

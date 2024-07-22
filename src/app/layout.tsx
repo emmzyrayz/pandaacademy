@@ -1,19 +1,63 @@
 "use client";
 
+import {useEffect} from "react";
 import {usePathname} from "next/navigation";
 import Header from "../components/_header/page";
 import Footer from "../components/_footer/page";
 import PreLoader from "../components/_preloader/page";
+import {noHeaderFooterPaths} from "./utils/constants";
 import "./style.css";
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   const pathname = usePathname();
+  
+  // Check if the current route matches any of the paths where header and footer should be hidden
+  const shouldHideHeaderFooter = noHeaderFooterPaths.some((path) =>
+    pathname.startsWith(path)
+  );
 
-  // List of paths where the header and footer should be hidden
-  const noHeaderFooterPaths = ["/login", "/register", "/forgot-password"];
+  useEffect(() => {
+    // Handle scroll events and back-to-top button click
+    const handleScroll = () => {
+      const scroll = window.scrollY;
+      const headerSticky = document.querySelector(".header-sticky");
+      const backTop = document.getElementById("back-top");
 
-  // Check if the current path matches any in the noHeaderFooterPaths array
-  const shouldHideHeaderFooter = noHeaderFooterPaths.includes(pathname);
+      if (scroll < 400) {
+        if (headerSticky) headerSticky.classList.remove("sticky-bar");
+        if (backTop) backTop.style.display = "none";
+      } else {
+        if (headerSticky) headerSticky.classList.add("sticky-bar");
+        if (backTop) backTop.style.display = "block";
+      }
+    };
+
+    const scrollToTop = (event: MouseEvent) => {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    // Attach event listeners
+    document.addEventListener("scroll", handleScroll);
+    const backTopLink = document.querySelector("#back-top a");
+    if (backTopLink) {
+      backTopLink.addEventListener("click", scrollToTop as EventListener);
+    }
+
+    // Initialize the display state
+    handleScroll();
+
+    // Cleanup event listeners on component unmount
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+      if (backTopLink) {
+        backTopLink.removeEventListener("click", scrollToTop as EventListener);
+      }
+    };
+  }, []);
 
   return (
     <html lang="en">
@@ -29,7 +73,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <link
           rel="shortcut icon"
           type="image/x-icon"
-          href="assets/img/favicon.ico"
+          href="/assets/img/favicon.ico"
         />
         <meta
           name="description"
@@ -115,6 +159,11 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         {!shouldHideHeaderFooter && <Header />}
         <main>{children}</main>
         {!shouldHideHeaderFooter && <Footer />}
+        <div id="back-top">
+          <a title="Go to Top" href="#">
+            <i className="fas fa-level-up-alt"></i>
+          </a>
+        </div>
       </body>
     </html>
   );

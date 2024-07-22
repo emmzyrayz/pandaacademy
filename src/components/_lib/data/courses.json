@@ -1,0 +1,871 @@
+{
+  "majors": [
+    {
+      "majorId": "UIUX",
+      "majorName": "UI/UX Design",
+      "majorIcon": "fa-solid fa-pen-ruler",
+      "numberOfCourses": "5",
+      "Price": "800",
+      "courses": [
+        {
+          "courseId": "/FIGMA",
+          "courseName": "Figma",
+          "description": "Learn to design user interfaces with Figma.",
+          "shortDescription": "Figma for UI/UX Design",
+          "courseIcon": "fa-brands fa-figma",
+          "numberOfTopics": 5,
+          "rating": 4.8,
+          "price": 199.99,
+          "tutor": [
+            {
+              "id": "tutor-001",
+              "name": "John Doe",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to Figma",
+              "topicDescription": "Getting started with Figma."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Figma Components",
+              "topicDescription": "Using components in Figma."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Prototyping",
+              "topicDescription": "Learning the use of prototyping"
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Design Systems",
+              "topicDescription": "Using components in Figma."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Collaborative Design",
+              "topicDescription": "Using components in Figma."
+            }
+          ]
+        },
+        {
+          "courseId": "/PHOTOSHOP",
+          "courseName": "Photoshop",
+          "description": "Master graphic design with Photoshop.",
+          "shortDescription": "Photoshop for UI/UX Design",
+          "courseIcon": "fa-brands fa-camera-retro",
+          "numberOfTopics": 8,
+          "rating": 4.7,
+          "price": 249.99,
+          "tutor": [
+            {
+              "id": "tutor-002",
+              "name": "Smith Greg",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to Photoshop",
+              "topicDescription": "Basics of Photoshop."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Layers and Masks",
+              "topicDescription": "Understanding layers and masks in Photoshop."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Tools and Techniques",
+              "topicDescription": "Understanding layers and masks in Photoshop."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Image Editing",
+              "topicDescription": "Understanding layers and masks in Photoshop."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Typography",
+              "topicDescription": "Understanding layers and masks in Photoshop."
+            }
+          ]
+        },
+        {
+          "courseId": "/SKETCH",
+          "courseName": "sketch",
+          "description": "Master graphic design with sketch.",
+          "shortDescription": "SKETCH for UI/UX Design",
+          "courseIcon": "fa-brands fa-sketch",
+          "numberOfTopics": 8,
+          "rating": 4.7,
+          "price": 249.99,
+          "tutor": [
+            {
+              "id": "tutor-002",
+              "name": "Smith Greg",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to sketch",
+              "topicDescription": "Basics of sketch."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Artboards and Symbols",
+              "topicDescription": "Understanding layers and masks in sketch."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Prototyping",
+              "topicDescription": "Understanding layers and masks in sketch."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Plugins",
+              "topicDescription": "Understanding layers and masks in sketch."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Exporting Assets",
+              "topicDescription": "Understanding layers and masks in sketch."
+            }
+          ]
+        },
+        {
+          "courseId": "/ADOBE_XD",
+          "courseName": "adobe xd",
+          "description": "Master graphic design with adobe xd.",
+          "shortDescription": "adobe xd for UI/UX Design",
+          "courseIcon": "fa-brands fa-artstation",
+          "numberOfTopics": 8,
+          "rating": 4.7,
+          "price": 249.99,
+          "tutor": [
+            {
+              "id": "tutor-002",
+              "name": "Smith Greg",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to Adobe XD",
+              "topicDescription": "Basics of Adobe XD."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "UI Components",
+              "topicDescription": "Understanding layers and masks in sketch."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Prototyping",
+              "topicDescription": "Understanding layers and masks in sketch."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Responsive Design",
+              "topicDescription": "Understanding layers and masks in sketch."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Sharing and Collaboration",
+              "topicDescription": "Understanding layers and masks in sketch."
+            }
+          ]
+        },
+        {
+          "courseId": "/InVision",
+          "courseName": "InVision",
+          "description": "Master graphic design with InVision.",
+          "shortDescription": "InVision for UI/UX Design",
+          "courseIcon": "fa-brands fa-invision",
+          "numberOfTopics": 8,
+          "rating": 4.7,
+          "price": 249.99,
+          "tutor": [
+            {
+              "id": "tutor-002",
+              "name": "Smith Greg",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to InVision",
+              "topicDescription": "Basics of InVision."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Prototyping",
+              "topicDescription": "Understanding layers and masks in sketch."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Design Collaboration",
+              "topicDescription": "Understanding layers and masks in sketch."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "User Testing",
+              "topicDescription": "Understanding layers and masks in sketch."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Design Systems",
+              "topicDescription": "Understanding layers and masks in sketch."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "majorId": "Frontend_Dev",
+      "majorName": "Frontend Web Development",
+      "majorIcon": "fa-solid fa-code",
+      "numberOfCourses": "6",
+      "Price": "600",
+      "courses": [
+        {
+          "courseId": "/HTML5",
+          "courseName": "HTML5",
+          "courseLogo": "fa-brands fa-html5",
+          "description": "Learn the latest HTML5 standards.",
+          "shortDescription": "HTML5 for Frontend Development",
+          "courseIcon": "fa-brands fa-html5",
+          "numberOfTopics": 10,
+          "rating": 4.9,
+          "price": 99.99,
+          "tutor": [
+            {
+              "id": "tutor-003",
+              "name": "Alice Johnson",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to HTML",
+              "topicDescription": "Getting started with HTML."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "HTML Tags",
+              "topicDescription": "Learning various HTML tags."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Forms and Tags",
+              "topicDescription": "Learning various HTML tags."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Semantic HTML",
+              "topicDescription": "Learning various HTML tags."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Accessibility",
+              "topicDescription": "Learning various HTML tags."
+            }
+          ]
+        },
+        {
+          "courseId": "/CSS3",
+          "courseName": "CSS3",
+          "description": "Master CSS3 for modern web design.",
+          "shortDescription": "CSS3 for Frontend Development",
+          "courseIcon": "fa-brands fa-css3-alt",
+          "numberOfTopics": 12,
+          "rating": 4.8,
+          "price": 119.99,
+          "tutor": [
+            {
+              "id": "tutor-004",
+              "name": "Bob Brown",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to CSS",
+              "topicDescription": "Getting started with CSS."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "CSS Grid",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Flexbox",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Animation",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Responsive Design",
+              "topicDescription": "Learning CSS Grid layout."
+            }
+          ]
+        },
+        {
+          "courseId": "/JAVASCRIPT",
+          "courseName": "Javascript",
+          "description": "Master Javascript for modern web design.",
+          "shortDescription": "Javascript for Frontend Development",
+          "courseIcon": "fa-brands fa-js",
+          "numberOfTopics": 12,
+          "rating": 4.8,
+          "price": 119.99,
+          "tutor": [
+            {
+              "id": "tutor-004",
+              "name": "Bob Brown",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to Javascript",
+              "topicDescription": "Getting started with CSS."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "DOM Manipulation",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "ES6+ Features",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Asynchronous Programming",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "JavaScript Frameworks",
+              "topicDescription": "Learning CSS Grid layout."
+            }
+          ]
+        },
+        {
+          "courseId": "/REACTJS",
+          "courseName": "REACTJS",
+          "description": "Master ReactJS for modern web design.",
+          "shortDescription": "ReactJS for Frontend Development",
+          "courseIcon": "fa-brands fa-react",
+          "numberOfTopics": 12,
+          "rating": 4.8,
+          "price": 119.99,
+          "tutor": [
+            {
+              "id": "tutor-004",
+              "name": "Bob Brown",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to REACTJS",
+              "topicDescription": "Getting started with CSS."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Components and Props",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "State and Lifecycle",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Hooks",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Context API",
+              "topicDescription": "Learning CSS Grid layout."
+            }
+          ]
+        },
+        {
+          "courseId": "/ANGULARJS",
+          "courseName": "ANGULARJS",
+          "description": "Master AngularJS for modern web design.",
+          "shortDescription": "AngularJS for Frontend Development",
+          "courseIcon": "fa-brands fa-angular",
+          "numberOfTopics": 12,
+          "rating": 4.8,
+          "price": 119.99,
+          "tutor": [
+            {
+              "id": "tutor-004",
+              "name": "Bob Brown",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to AngularJS",
+              "topicDescription": "Getting started with CSS."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Components and Modules",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Services and Dependency Injection",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Routing",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "RxJS and Observation",
+              "topicDescription": "Learning CSS Grid layout."
+            }
+          ]
+        },
+        {
+          "courseId": "/VUEJS",
+          "courseName": "VUEJS",
+          "description": "Master VueJS for modern web design.",
+          "shortDescription": "VueJS for Frontend Development",
+          "courseIcon": "fa-brands fa-vuejs",
+          "numberOfTopics": 12,
+          "rating": 4.8,
+          "price": 119.99,
+          "tutor": [
+            {
+              "id": "tutor-004",
+              "name": "Bob Brown",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to Vue",
+              "topicDescription": "Getting started with CSS."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Vue Components",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Directive and Filters",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Vue Router",
+              "topicDescription": "Learning CSS Grid layout."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Vuex for State Management",
+              "topicDescription": "Learning CSS Grid layout."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "majorId": "Backend_Dev",
+      "majorName": "Backend Development",
+      "majorIcon": "fa-solid fa-server",
+      "Price": "800",
+      "courses": [
+        {
+          "courseId": "/NODEJS",
+          "courseName": "Node.js",
+          "description": "Learn server-side development with Node.js.",
+          "shortDescription": "Node.js for Backend Development",
+          "courseIcon": "fa-brands fa-node",
+          "numberOfTopics": 15,
+          "rating": 4.9,
+          "price": 149.99,
+          "tutor": [
+            {
+              "id": "tutor-005",
+              "name": "Charles Davies",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to Node.js",
+              "topicDescription": "Getting started with Node.js."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Node.js Modules",
+              "topicDescription": "Understanding modules in Node.js."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Asynchronous Programming",
+              "topicDescription": "Understanding modules in Node.js."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "File System",
+              "topicDescription": "Understanding modules in Node.js."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Building APIs",
+              "topicDescription": "Understanding modules in Node.js."
+            }
+          ]
+        },
+        {
+          "courseId": "/EXPRESSJS",
+          "courseName": "Express.js",
+          "description": "Build web applications with Express.js.",
+          "shortDescription": "Express.js for Backend Development",
+          "courseIcon": "fa-brands fa-mixer",
+          "numberOfTopics": 12,
+          "rating": 4.7,
+          "price": 129.99,
+          "tutor": [
+            {
+              "id": "tutor-006",
+              "name": "Dana Evans",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to Express.js",
+              "topicDescription": "Getting started with Express.js."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Express.js Routing",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Middleware",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Authentication",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Error Handling",
+              "topicDescription": "Understanding routing in Express.js."
+            }
+          ]
+        },
+        {
+          "courseId": "/MONGODB",
+          "courseName": "MongoDB",
+          "description": "Build web applications with MongoDB.",
+          "shortDescription": "MongoDB for Backend Development",
+          "courseIcon": "fa-brands fa-envira",
+          "numberOfTopics": 12,
+          "rating": 4.7,
+          "price": 129.99,
+          "tutor": [
+            {
+              "id": "tutor-006",
+              "name": "Dana Evans",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to MongoDB",
+              "topicDescription": "Getting started with MongoDB."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "CRUD Operation",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Indexing and Aggregration",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Data Modeling",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Replicating and Sharding",
+              "topicDescription": "Understanding routing in Express.js."
+            }
+          ]
+        },
+        {
+          "courseId": "/MYSQL",
+          "courseName": "MySQL",
+          "description": "Build web applications with MySQL.",
+          "shortDescription": "MySQL for Backend Development",
+          "courseIcon": "fa-solid fa-database",
+          "numberOfTopics": 12,
+          "rating": 4.7,
+          "price": 129.99,
+          "tutor": [
+            {
+              "id": "tutor-006",
+              "name": "Dana Evans",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to MySQL",
+              "topicDescription": "Getting started with MySQL."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "SQL Queries",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Joins and Subqueries",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Transactions",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Database Optimization",
+              "topicDescription": "Understanding routing in Express.js."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

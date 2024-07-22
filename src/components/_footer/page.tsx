@@ -18,7 +18,7 @@ function Footer() {
                       <div className="footer-logo mb-25">
                         <a href="/">
                           <img
-                            src="assets/img/logo/logo.png"
+                            src="/assets/img/logo/logo.png"
                             alt="footer-logo"
                             className="logo-png"
                           />
