@@ -1,5 +1,5 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css);
+@import url(../../../public/assets/css/slicknav.css);
+@import url(../../../public/assets/css/slick.css);
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-area {
