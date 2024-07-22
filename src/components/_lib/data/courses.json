@@ -864,6 +864,62 @@
               "topicDescription": "Understanding routing in Express.js."
             }
           ]
+        },
+        {
+          "courseId": "/PYTHON",
+          "courseName": "PYTHON (Django/Flask)",
+          "description": "Build web applications with Python.",
+          "shortDescription": "Python(Django/Flask) for Backend Development",
+          "courseIcon": "fa-brands fa-python",
+          "numberOfTopics": 12,
+          "rating": 4.7,
+          "price": 129.99,
+          "tutor": [
+            {
+              "id": "tutor-006",
+              "name": "Dana Evans",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to Django/Flask",
+              "topicDescription": "Getting started with MySQL."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Models and ORM",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Templates and Views",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Forms and Views",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Deployment",
+              "topicDescription": "Understanding routing in Express.js."
+            }
+          ]
         }
       ]
     }
