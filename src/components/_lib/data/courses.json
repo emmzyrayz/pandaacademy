@@ -1102,7 +1102,7 @@
           "courseName": "Machine Learning",
           "description": "Build web applications with Machine Learning.",
           "shortDescription": "Machine Learning for Backend Development",
-          "courseIcon": "fa-brands fa-microchip",
+          "courseIcon": "fa-solid fa-microchip",
           "numberOfTopics": 12,
           "rating": 4.7,
           "price": 129.99,
