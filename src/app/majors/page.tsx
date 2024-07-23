@@ -54,12 +54,15 @@ export default function CourseList() {
                     <div className="properties__img overlay1">
                       <Link href={`/majors/${major.majorId}`}>
                         <div>
-                          <img src="/assets/img/gallery/featured1.png" alt="" />
+                          <i className={`${major.majorIcon} img`}></i>
                         </div>
                       </Link>
                     </div>
                     <div className="properties__caption">
-                      <p>{major.majorName}<i className={major.majorIcon}></i></p>
+                      <p>
+                        {major.majorName}
+                        <i className={major.majorIcon}></i>
+                      </p>
                       <h3>
                         <Link href={`/courses/${major.majorId}`}>
                           <span>{major.courses[0].courseName}</span>
