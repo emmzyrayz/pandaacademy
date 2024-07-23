@@ -980,8 +980,8 @@
       ]
     },
     {
-      "majorId": "DataScience_MachineLearning",
-      "majorName": "Data Science and Machine Learning",
+      "majorId": "DSML",
+      "majorName": "Data Sci and Machine Learning",
       "majorIcon": "fa-solid fa-chart-line",
       "Price": "800",
       "courses": [
@@ -1270,15 +1270,15 @@
     {
       "majorId": "CYBER_SECURITY",
       "majorName": "CYBER SECURITY",
-      "majorIcon": "fa-solid fa-chart-line",
+      "majorIcon": "fa-solid fa-user-secret",
       "Price": "800",
       "courses": [
         {
-          "courseId": "/PYTHON(Data Science)",
-          "courseName": "Python For Data Science",
-          "description": "Learn server-side development with Python For Data Science.",
-          "shortDescription": "Python For Data Science for Backend Development",
-          "courseIcon": "fa-brands fa-python",
+          "courseId": "/NETWORK_SECURITY",
+          "courseName": "Network Security",
+          "description": "Learn server-side development with Network Security.",
+          "shortDescription": "Network Security for Backend Development",
+          "courseIcon": "fa-solid fa-building-shield",
           "numberOfTopics": 15,
           "rating": 4.9,
           "price": 149.99,
@@ -1304,37 +1304,37 @@
           "topics": [
             {
               "topicId": "-T1",
-              "topicName": "Intro to Python For Data Science",
+              "topicName": "Intro to Network Security",
               "topicDescription": "Getting started with Node.js."
             },
             {
               "topicId": "-T2",
-              "topicName": "Data Structure",
+              "topicName": "Firewall",
               "topicDescription": "Understanding modules in Node.js."
             },
             {
               "topicId": "-T3",
-              "topicName": "NumPy and Pandas",
+              "topicName": "Instrusion Detection Systems",
               "topicDescription": "Understanding modules in Node.js."
             },
             {
               "topicId": "-T4",
-              "topicName": "Data Cleaning",
+              "topicName": "Network Protocols",
               "topicDescription": "Understanding modules in Node.js."
             },
             {
               "topicId": "-T5",
-              "topicName": "Data Analysis",
+              "topicName": "VPNs",
               "topicDescription": "Understanding modules in Node.js."
             }
           ]
         },
         {
-          "courseId": "/R_PROGRAMMING",
-          "courseName": "R Programming",
-          "description": "Build web applications with R Programming.",
-          "shortDescription": "R Programming for Backend Development",
-          "courseIcon": "fa-brands fa-r-project",
+          "courseId": "/ETHICAL_HACKING",
+          "courseName": "Ethical Hacking",
+          "description": "Build web applications with Ethical Hacking.",
+          "shortDescription": "Ethical Hacking for Backend Development",
+          "courseIcon": "fa-solid fa-shield",
           "numberOfTopics": 12,
           "rating": 4.7,
           "price": 129.99,
@@ -1360,37 +1360,37 @@
           "topics": [
             {
               "topicId": "-T1",
-              "topicName": "Intro to R",
+              "topicName": "Intro to Ethical Hacking",
               "topicDescription": "Getting started with Express.js."
             },
             {
               "topicId": "-T2",
-              "topicName": "Data Manipulation",
+              "topicName": "Reconnaissance",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T3",
-              "topicName": "Statistical Analysis",
+              "topicName": "Scanning and Enumeration",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T4",
-              "topicName": "Visualization with ggplot2",
+              "topicName": "Exploitation",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T5",
-              "topicName": "R Markdown",
+              "topicName": "Post-Exploitation",
               "topicDescription": "Understanding routing in Express.js."
             }
           ]
         },
         {
-          "courseId": "/MACHINE_LEARNING",
-          "courseName": "Machine Learning",
-          "description": "Build web applications with Machine Learning.",
-          "shortDescription": "Machine Learning for Backend Development",
-          "courseIcon": "fa-brands fa-microchip",
+          "courseId": "/CRYPTOGRAPHY",
+          "courseName": "Cryptography",
+          "description": "Build web applications with Cryptography.",
+          "shortDescription": "Cryptography for Backend Development",
+          "courseIcon": "fa-brands fa-keycdn",
           "numberOfTopics": 12,
           "rating": 4.7,
           "price": 129.99,
@@ -1416,37 +1416,37 @@
           "topics": [
             {
               "topicId": "-T1",
-              "topicName": "Intro to Machine Learning",
+              "topicName": "Intro to Cryptography",
               "topicDescription": "Getting started with MongoDB."
             },
             {
               "topicId": "-T2",
-              "topicName": "Supervised Learning",
+              "topicName": "Encryption and Decryption",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T3",
-              "topicName": "Unsupervised Learning",
+              "topicName": "Symmetric vs Asymmetric",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T4",
-              "topicName": "Model Evaluation",
+              "topicName": "Hash Function",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T5",
-              "topicName": "Feature Engineering",
+              "topicName": "Public Key Infrastructure",
               "topicDescription": "Understanding routing in Express.js."
             }
           ]
         },
         {
-          "courseId": "/DATA_VIRTUALIZATION",
-          "courseName": "Data Virtualization",
-          "description": "Build web applications with Data Virtualization.",
-          "shortDescription": "Data Virtualization for Backend Development",
-          "courseIcon": "fa-solid fa-chart-pie",
+          "courseId": "/SECURITY_OPERATION",
+          "courseName": "Security Operation",
+          "description": "Build web applications with Security Operation.",
+          "shortDescription": "Security Operation for Backend Development",
+          "courseIcon": "fa-solid fa-circle-nodes",
           "numberOfTopics": 12,
           "rating": 4.7,
           "price": 129.99,
@@ -1472,37 +1472,37 @@
           "topics": [
             {
               "topicId": "-T1",
-              "topicName": "Intro to Data Visualization",
+              "topicName": "Intro to Security Operation",
               "topicDescription": "Getting started with MySQL."
             },
             {
               "topicId": "-T2",
-              "topicName": "Matplotlib and Seaborn",
+              "topicName": "Security Information and Event Management(SIEM)",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T3",
-              "topicName": "Plotly",
+              "topicName": "Threat Intelligence",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T4",
-              "topicName": "Dashboards",
+              "topicName": "Vunerability Management",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T5",
-              "topicName": "Storytelling with Data",
+              "topicName": "Compliance",
               "topicDescription": "Understanding routing in Express.js."
             }
           ]
         },
         {
-          "courseId": "/DEEP_LEARNING",
-          "courseName": "Deep Learning",
-          "description": "Build web applications with Deep Learning.",
-          "shortDescription": "Deep Learning for Backend Development",
-          "courseIcon": "fa-solid fa-brain",
+          "courseId": "/INCIDENT_RESPONSE",
+          "courseName": "Incident Response",
+          "description": "Build web applications with Incident Response.",
+          "shortDescription": "Incident Response for Backend Development",
+          "courseIcon": "fa-brands fa-watchman-monitoring",
           "numberOfTopics": 12,
           "rating": 4.7,
           "price": 129.99,
@@ -1528,27 +1528,315 @@
           "topics": [
             {
               "topicId": "-T1",
-              "topicName": "Intro to Deep Learning",
+              "topicName": "Intro to Incident Response",
               "topicDescription": "Getting started with MySQL."
             },
             {
               "topicId": "-T2",
-              "topicName": "Neural Network",
+              "topicName": "Incident Handling",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T3",
-              "topicName": "Convolutional Neural Networks",
+              "topicName": "Digital Forensics",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T4",
-              "topicName": "Recurrent Neural Networks",
+              "topicName": "Malware Analysis",
               "topicDescription": "Understanding routing in Express.js."
             },
             {
               "topicId": "-T5",
-              "topicName": "Transfer Learning",
+              "topicName": "Incident Recovery",
+              "topicDescription": "Understanding routing in Express.js."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "majorId": "DATA_ENGR",
+      "majorName": "Data Engineering",
+      "majorIcon": "fa-solid fa-gears",
+      "Price": "800",
+      "courses": [
+        {
+          "courseId": "/SQL",
+          "courseName": "Structured Query Language (SQL)",
+          "description": "Learn server-side development with SQL.",
+          "shortDescription": "SQL for Backend Development",
+          "courseIcon": "fa-solid fa-server",
+          "numberOfTopics": 15,
+          "rating": 4.9,
+          "price": 149.99,
+          "tutor": [
+            {
+              "id": "tutor-005",
+              "name": "Charles Davies",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to SQL",
+              "topicDescription": "Getting started with Node.js."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Advanced Queries",
+              "topicDescription": "Understanding modules in Node.js."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Stored Procedures",
+              "topicDescription": "Understanding modules in Node.js."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Indexes",
+              "topicDescription": "Understanding modules in Node.js."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Query Optimization",
+              "topicDescription": "Understanding modules in Node.js."
+            }
+          ]
+        },
+        {
+          "courseId": "/APACHE_SPARK",
+          "courseName": "Apache Spark",
+          "description": "Build web applications with Apache Spark.",
+          "shortDescription": "Apache Spark for Backend Development",
+          "courseIcon": "fa-regular fa-star",
+          "numberOfTopics": 12,
+          "rating": 4.7,
+          "price": 129.99,
+          "tutor": [
+            {
+              "id": "tutor-006",
+              "name": "Dana Evans",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to Apache Spark",
+              "topicDescription": "Getting started with Express.js."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "RDDs and DataFrames",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Spark SQL",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Spark Streaming",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Machine Learning with Spark",
+              "topicDescription": "Understanding routing in Express.js."
+            }
+          ]
+        },
+        {
+          "courseId": "/HADOOP",
+          "courseName": "Hadoop",
+          "description": "Build web applications with Hadoop.",
+          "shortDescription": "Hadoop for Backend Development",
+          "courseIcon": "fa-solid fa-republican",
+          "numberOfTopics": 12,
+          "rating": 4.7,
+          "price": 129.99,
+          "tutor": [
+            {
+              "id": "tutor-006",
+              "name": "Dana Evans",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to Hadoop",
+              "topicDescription": "Getting started with MongoDB."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "HDFS",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "MapReduce",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "YARN",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Hadoop Ecosystem",
+              "topicDescription": "Understanding routing in Express.js."
+            }
+          ]
+        },
+        {
+          "courseId": "/DATA_WAREHOUSING",
+          "courseName": "Data Warehousing",
+          "description": "Build web applications with Data Warehousing.",
+          "shortDescription": "Data Warehousing for Backend Development",
+          "courseIcon": "fa-solid fa-warehouse",
+          "numberOfTopics": 12,
+          "rating": 4.7,
+          "price": 129.99,
+          "tutor": [
+            {
+              "id": "tutor-006",
+              "name": "Dana Evans",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to Data Warehousing",
+              "topicDescription": "Getting started with MySQL."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Data Modeling",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "OLAP vs OLTP",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Data Integration",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "Business Intelligence",
+              "topicDescription": "Understanding routing in Express.js."
+            }
+          ]
+        },
+        {
+          "courseId": "/ETL_PROCESSES",
+          "courseName": "ETL Processes",
+          "description": "Build web applications with ETL Processes.",
+          "shortDescription": "ETL Processes for Backend Development",
+          "courseIcon": "fa-solid fa-shuffle",
+          "numberOfTopics": 12,
+          "rating": 4.7,
+          "price": 129.99,
+          "tutor": [
+            {
+              "id": "tutor-006",
+              "name": "Dana Evans",
+              "Bio": "lorem34",
+              "personalMessage": "keep learning",
+              "image": "/img/g1.jpg",
+              "rating": "4.5",
+              "courses": ["html", "css", "JavaScript"],
+              "achievement": ["awards", "projects", "recognition"],
+              "contact": [
+                {
+                  "phone": "+234123456789",
+                  "x": "https://x.com",
+                  "facebook": "https://facebook.com"
+                }
+              ]
+            }
+          ],
+          "topics": [
+            {
+              "topicId": "-T1",
+              "topicName": "Intro to ETL",
+              "topicDescription": "Getting started with MySQL."
+            },
+            {
+              "topicId": "-T2",
+              "topicName": "Data Extraction",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T3",
+              "topicName": "Data Transformation",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T4",
+              "topicName": "Data Loading",
+              "topicDescription": "Understanding routing in Express.js."
+            },
+            {
+              "topicId": "-T5",
+              "topicName": "ETL Tools",
               "topicDescription": "Understanding routing in Express.js."
             }
           ]
