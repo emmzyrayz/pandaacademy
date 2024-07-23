@@ -150,7 +150,7 @@
 }
 
 .main-header .main-menu ul li:hover>a {
-    color: #fff
+    color: #fff;
 }
 
 .main-header .main-menu ul ul.submenu {
@@ -183,7 +183,8 @@
 .main-header .main-menu ul ul.submenu>li>a:hover {
     color: #C86FFF;
     background: none;
-    padding-left: 13px !important
+    padding-left: 13px !important;
+    border-radius: 10px;
 }
 
 .button-header.margin-left {
@@ -304,7 +305,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-left: 50px;
+    padding: 10px 20px;
     gap: 5px;
     border-radius: 5px;
     /* display: none; */
@@ -332,6 +333,7 @@
     /* background: transparent; */
     color: #FFF;
     opacity: 1.5;
+    border-radius: 10px;
 }
 
 .mobile_menu .slicknav_nav li>a {
@@ -458,4 +460,8 @@
     font-size: 24px !important;
     font-weight: 800 !important;
     color: #fff;
+}
+
+.dispNone {
+    display: none !important;
 }

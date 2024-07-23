@@ -59,7 +59,7 @@ function Header() {
                           <a href="contact.html">Contact</a>
                         </li>
                         {/* Button */}
-                        <li id="userProfile" className="user-pro align-items-center">
+                        <li id="userProfile" className="dispNone user-pro align-items-center">
                           {/* Placeholder for user profile */}
                           <FaUserCircle className="userImg" />
                           <span id="userName" className="fs-16 fw-600">Martin Balogun</span>
@@ -67,18 +67,18 @@ function Header() {
                             Log Out
                           </a>
                         </li>
-                        <div className="authLinks" id="authLinks">
-                          <li className="button-header margin-left">
-                            <a href="register.html" className="btn">
+                        <li className="authLinks" id="authLinks">
+                          <span className="button-header margin-left">
+                            <a href="/register" className="btn">
                               Join
                             </a>
-                          </li>
-                          <li className="button-header">
+                          </span>
+                          <span className="button-header">
                             <a href="/login" className="btn">
                               Log in
                             </a>
-                          </li>
-                        </div>
+                          </span>
+                        </li>
                       </ul>
                     </nav>
                   </div>
@@ -123,7 +123,7 @@ function Header() {
                       </a>
                     </li>
                     {/* Button */}
-                    <li className="disFlex">
+                    <li className="disFlex dispNone">
                       {/* Placeholder for user profile */}
                       <FaUserCircle className="userImg" />
                       <span></span>
@@ -131,13 +131,13 @@ function Header() {
                         Log Out
                       </a>
                     </li>
-                    <div className="authLinks disFlex">
-                      <li className="button-header margin-left">
+                    <li className="authLinks disFlex">
+                      <span className="button-header margin-left">
                         <a href="register.html" className="btn" role="menuitem">
                           Join
                         </a>
-                      </li>
-                      <li className="button-header">
+                      </span>
+                      <span className="button-header">
                         <a
                           href="/login"
                           className="btn hero-btn"
@@ -145,8 +145,8 @@ function Header() {
                         >
                           Log in
                         </a>
-                      </li>
-                    </div>
+                      </span>
+                    </li>
                   </ul>
                 </div>
               </div>

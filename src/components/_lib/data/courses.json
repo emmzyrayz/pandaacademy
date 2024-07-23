@@ -68,7 +68,7 @@
           "courseName": "Photoshop",
           "description": "Master graphic design with Photoshop.",
           "shortDescription": "Photoshop for UI/UX Design",
-          "courseIcon": "fa-brands fa-camera-retro",
+          "courseIcon": "fa-solid fa-camera-retro",
           "numberOfTopics": 8,
           "rating": 4.7,
           "price": 249.99,
