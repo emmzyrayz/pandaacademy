@@ -3,6 +3,7 @@
 import {useParams} from "next/navigation";
 import {majors} from "../../../components/_lib/data/courses.json";
 import "../style.css"
+import "preline"
 
 const MajorPage = () => {
   const params = useParams();
@@ -51,8 +52,11 @@ const MajorPage = () => {
         </div>
       </section>
       {major.courses.map((course) => (
-        <div key={course.courseId}>
-          <h2>{course.courseName} <i className={course.courseIcon}></i></h2>
+        <div className="grid grid-cols-2 gap-2" key={course.courseId}>
+          <div>
+            <i className={`${course.courseIcon} courseIcon`}></i>
+            <h2>{course.courseName}</h2>
+          </div>
           <p>{course.description}</p>
           <ul>
             {course.topics.map((topic) => (

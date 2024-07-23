@@ -6,6 +6,7 @@ import Header from "../components/_header/page";
 import Footer from "../components/_footer/page";
 import PreLoader from "../components/_preloader/page";
 import {noHeaderFooterPaths} from "./utils/constants";
+import PrelineScript from "@/components/preLineScript";
 import "./style.css";
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
@@ -141,6 +142,8 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxchimp/1.3.0/jquery.ajaxchimp.min.js"></script>
+        <script src="./node_modules/preline/dist/preline.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flaticon@0.1.0/main.min.js"></script>
 
         {/* javascript file */}
 
@@ -152,7 +155,6 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <script src="./assets/js/mail-script.js"></script>
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/flaticon@0.1.0/main.min.js"></script>
       </head>
       <body>
         <PreLoader />
@@ -165,6 +167,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           </a>
         </div>
       </body>
+      <PrelineScript />
     </html>
   );
 }
