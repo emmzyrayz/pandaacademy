@@ -1,8 +1,11 @@
-import {majors} from "../../components/_lib/data/courses.json";
+import majorData from "../../components/_lib/data/courses.json";
 import Link from "next/link";
 import "./style.css";
 
 export default function CourseList() {
+
+  const majors = majorData.majors;
+
   return (
     <>
       <section className="slider-area slider-area2">

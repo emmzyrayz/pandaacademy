@@ -339,7 +339,7 @@
     height: 100%;
 }
 
-.courses-area .properties__img i.img{
+.courses-area .properties__img i.img {
     font-size: 200px;
     align-items: center;
     width: 100%;
@@ -529,4 +529,70 @@
     .topic-area .single-topic .topic-content-box .topic-content p {
         padding: 0 18px
     }
+}
+
+/* MAJOR STYLING */
+.course-con {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    /* background: red; */
+    border-radius: 10px;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+
+.course-con .main-con {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.course-con .main-con>.left-con {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    /* background: green; */
+}
+
+.course-con .main-con>.left-con>.courseIcon {
+    font-size: 80px;
+    padding: 5px 0;
+    color: #c054ff;
+    color: -moz-linear-gradient(top, #c054ff 0%, #5274ff 100%);
+    color: -webkit-linear-gradient(top, #c054ff 0%, #5274ff 100%);
+    color: linear-gradient(to bottom, #c054ff 0%, #5274ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c054ff', endColorstr='#5274ff', GradientType=0)
+}
+
+.course-con .main-con>.right-con>h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 15px;
+    padding: 3px 0;
+    text-transform: capitalize;
+}
+
+.course-con .main-con>.right-con>p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.course-con>.drop-con,
+.course-con .main-con>.drop-icon>.up-icon,
+.course-con .main-con>.drop-icon>.down-icon {
+    display: none;
+}
+
+.course-con>.drop-con.active {
+    display: flex;
+}
+
+.active {
+    display: block !important;
 }
