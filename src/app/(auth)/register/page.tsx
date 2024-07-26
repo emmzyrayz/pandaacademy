@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import "./style.css";
+import Image from "next/image";
 
 function Register() {
    useEffect(() => {
@@ -37,7 +38,13 @@ function Register() {
           {/* <!-- logo-login --> */}
           <div className="logo-login">
             <a href="/">
-              <img src="/assets/img/logo/panda.png" alt="Logo" />
+              <Image
+                src="/assets/img/logo/panda.png"
+                alt="Logo"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={500}
+                height={300}
+              />
             </a>
           </div>
           <h2>Registration Here</h2>

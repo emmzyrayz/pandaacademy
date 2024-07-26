@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {TiArrowLeft, TiArrowRight} from "react-icons/ti";
 import "./style.css";
+import Image from "next/image";
 
 function Experts() {
   const settings = {
@@ -76,7 +77,14 @@ function Experts() {
         <Slider className="team-active" {...settings}>
           <div className="single-cat text-center">
             <div className="cat-icon">
-              <img src="/assets/img/gallery/team1.png" alt="" />
+              <Image
+                src="/assets/img/gallery/team1.png"
+                alt=""
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
             </div>
             <div className="cat-cap">
               <h5>
@@ -87,7 +95,14 @@ function Experts() {
           </div>
           <div className="single-cat text-center">
             <div className="cat-icon">
-              <img src="/assets/img/gallery/team2.png" alt="" />
+              <Image
+                src="/assets/img/gallery/team2.png"
+                alt=""
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
             </div>
             <div className="cat-cap">
               <h5>
@@ -98,7 +113,14 @@ function Experts() {
           </div>
           <div className="single-cat text-center">
             <div className="cat-icon">
-              <img src="/assets/img/gallery/team3.png" alt="" />
+              <Image
+                src="/assets/img/gallery/team3.png"
+                alt=""
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
             </div>
             <div className="cat-cap">
               <h5>
@@ -109,7 +131,14 @@ function Experts() {
           </div>
           <div className="single-cat text-center">
             <div className="cat-icon">
-              <img src="/assets/img/gallery/team4.png" alt="" />
+              <Image
+                src="/assets/img/gallery/team4.png"
+                alt=""
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
             </div>
             <div className="cat-cap">
               <h5>
@@ -120,7 +149,14 @@ function Experts() {
           </div>
           <div className="single-cat text-center">
             <div className="cat-icon">
-              <img src="/assets/img/gallery/team3.png" alt="" />
+              <Image
+                src="/assets/img/gallery/team3.png"
+                alt=""
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
             </div>
             <div className="cat-cap">
               <h5>

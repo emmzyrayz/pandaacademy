@@ -1,4 +1,5 @@
 import "./style.css";
+import Image from "next/image";
 
 function TopTopic() {
   return (
@@ -15,7 +16,13 @@ function TopTopic() {
           <div className="col-lg-3 col-md-4 col-sm-6">
             <div className="single-topic text-center mb-30">
               <div className="topic-img">
-                <img src="/assets/img/gallery/topic1.png" alt="" />
+                <Image
+                  src="/assets/img/gallery/topic1.png"
+                  alt=""
+                  style={{width: "100%", height: "auto", objectFit: "cover"}}
+                  width={500}
+                  height={300}
+                />
                 <div className="topic-content-box">
                   <div className="topic-content">
                     <h3>
@@ -29,7 +36,13 @@ function TopTopic() {
           <div className="col-lg-3 col-md-4 col-sm-6">
             <div className="single-topic text-center mb-30">
               <div className="topic-img">
-                <img src="/assets/img/gallery/topic2.png" alt="" />
+                <Image
+                  src="/assets/img/gallery/topic2.png"
+                  alt=""
+                  style={{width: "100%", height: "auto", objectFit: "cover"}}
+                  width={500}
+                  height={300}
+                />
                 <div className="topic-content-box">
                   <div className="topic-content">
                     <h3>
@@ -43,7 +56,13 @@ function TopTopic() {
           <div className="col-lg-3 col-md-4 col-sm-6">
             <div className="single-topic text-center mb-30">
               <div className="topic-img">
-                <img src="/assets/img/gallery/topic3.png" alt="" />
+                <Image
+                  src="/assets/img/gallery/topic3.png"
+                  alt=""
+                  style={{width: "100%", height: "auto", objectFit: "cover"}}
+                  width={500}
+                  height={300}
+                />
                 <div className="topic-content-box">
                   <div className="topic-content">
                     <h3>
@@ -57,7 +76,13 @@ function TopTopic() {
           <div className="col-lg-3 col-md-4 col-sm-6">
             <div className="single-topic text-center mb-30">
               <div className="topic-img">
-                <img src="/assets/img/gallery/topic4.png" alt="" />
+                <Image
+                  src="/assets/img/gallery/topic4.png"
+                  alt=""
+                  style={{width: "100%", height: "auto", objectFit: "cover"}}
+                  width={500}
+                  height={300}
+                />
                 <div className="topic-content-box">
                   <div className="topic-content">
                     <h3>
@@ -71,7 +96,13 @@ function TopTopic() {
           <div className="col-lg-3 col-md-4 col-sm-6">
             <div className="single-topic text-center mb-30">
               <div className="topic-img">
-                <img src="/assets/img/gallery/topic5.png" alt="" />
+                <Image
+                  src="/assets/img/gallery/topic5.png"
+                  alt=""
+                  style={{width: "100%", height: "auto", objectFit: "cover"}}
+                  width={500}
+                  height={300}
+                />
                 <div className="topic-content-box">
                   <div className="topic-content">
                     <h3>
@@ -85,7 +116,13 @@ function TopTopic() {
           <div className="col-lg-3 col-md-4 col-sm-6">
             <div className="single-topic text-center mb-30">
               <div className="topic-img">
-                <img src="/assets/img/gallery/topic6.png" alt="" />
+                <Image
+                  src="/assets/img/gallery/topic6.png"
+                  alt=""
+                  style={{width: "100%", height: "auto", objectFit: "cover"}}
+                  width={500}
+                  height={300}
+                />
                 <div className="topic-content-box">
                   <div className="topic-content">
                     <h3>
@@ -99,7 +136,13 @@ function TopTopic() {
           <div className="col-lg-3 col-md-4 col-sm-6">
             <div className="single-topic text-center mb-30">
               <div className="topic-img">
-                <img src="/assets/img/gallery/topic7.png" alt="" />
+                <Image
+                  src="/assets/img/gallery/topic7.png"
+                  alt=""
+                  style={{width: "100%", height: "auto", objectFit: "cover"}}
+                  width={500}
+                  height={300}
+                />
                 <div className="topic-content-box">
                   <div className="topic-content">
                     <h3>
@@ -113,7 +156,13 @@ function TopTopic() {
           <div className="col-lg-3 col-md-4 col-sm-6">
             <div className="single-topic text-center mb-30">
               <div className="topic-img">
-                <img src="/assets/img/gallery/topic8.png" alt="" />
+                <Image
+                  src="/assets/img/gallery/topic8.png"
+                  alt=""
+                  style={{width: "100%", height: "auto", objectFit: "cover"}}
+                  width={500}
+                  height={300}
+                />
                 <div className="topic-content-box">
                   <div className="topic-content">
                     <h3>

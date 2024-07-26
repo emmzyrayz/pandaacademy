@@ -1,9 +1,9 @@
 import majorData from "../../components/_lib/data/courses.json";
 import Link from "next/link";
 import "./style.css";
+import Image from "next/image";
 
 export default function CourseList() {
-
   const majors = majorData.majors;
 
   return (
@@ -127,7 +127,13 @@ export default function CourseList() {
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className="single-topic text-center mb-30">
                 <div className="topic-img">
-                  <img src="/assets/img/gallery/topic1.png" alt="" />
+                  <Image
+                    src="/assets/img/gallery/topic1.png"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                   <div className="topic-content-box">
                     <div className="topic-content">
                       <h3>
@@ -141,7 +147,13 @@ export default function CourseList() {
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className="single-topic text-center mb-30">
                 <div className="topic-img">
-                  <img src="/assets/img/gallery/topic2.png" alt="" />
+                  <Image
+                    src="/assets/img/gallery/topic2.png"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                   <div className="topic-content-box">
                     <div className="topic-content">
                       <h3>
@@ -155,7 +167,13 @@ export default function CourseList() {
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className="single-topic text-center mb-30">
                 <div className="topic-img">
-                  <img src="/assets/img/gallery/topic3.png" alt="" />
+                  <Image
+                    src="/assets/img/gallery/topic3.png"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                   <div className="topic-content-box">
                     <div className="topic-content">
                       <h3>
@@ -169,7 +187,13 @@ export default function CourseList() {
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className="single-topic text-center mb-30">
                 <div className="topic-img">
-                  <img src="/assets/img/gallery/topic4.png" alt="" />
+                  <Image
+                    src="/assets/img/gallery/topic4.png"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                   <div className="topic-content-box">
                     <div className="topic-content">
                       <h3>
@@ -183,7 +207,13 @@ export default function CourseList() {
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className="single-topic text-center mb-30">
                 <div className="topic-img">
-                  <img src="/assets/img/gallery/topic5.png" alt="" />
+                  <Image
+                    src="/assets/img/gallery/topic5.png"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                   <div className="topic-content-box">
                     <div className="topic-content">
                       <h3>
@@ -197,7 +227,13 @@ export default function CourseList() {
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className="single-topic text-center mb-30">
                 <div className="topic-img">
-                  <img src="/assets/img/gallery/topic6.png" alt="" />
+                  <Image
+                    src="/assets/img/gallery/topic6.png"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                   <div className="topic-content-box">
                     <div className="topic-content">
                       <h3>
@@ -211,7 +247,13 @@ export default function CourseList() {
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className="single-topic text-center mb-30">
                 <div className="topic-img">
-                  <img src="/assets/img/gallery/topic7.png" alt="" />
+                  <Image
+                    src="/assets/img/gallery/topic7.png"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                   <div className="topic-content-box">
                     <div className="topic-content">
                       <h3>
@@ -225,7 +267,13 @@ export default function CourseList() {
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className="single-topic text-center mb-30">
                 <div className="topic-img">
-                  <img src="/assets/img/gallery/topic8.png" alt="" />
+                  <Image
+                    src="/assets/img/gallery/topic8.png"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                   <div className="topic-content-box">
                     <div className="topic-content">
                       <h3>
@@ -239,7 +287,13 @@ export default function CourseList() {
             <div className="col-lg-3 col-md-4 col-sm-6">
               <div className="single-topic text-center mb-30">
                 <div className="topic-img">
-                  <img src="/assets/img/gallery/topic8.png" alt="" />
+                  <Image
+                    src="/assets/img/gallery/topic8.png"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                   <div className="topic-content-box">
                     <div className="topic-content">
                       <h3>
@@ -271,7 +325,13 @@ export default function CourseList() {
             <div className="col-lg-4 col-md-6 col-sm-8">
               <div className="single-services mb-30">
                 <div className="features-icon">
-                  <img src="/assets/img/icon/icon1.svg" alt="" />
+                  <Image
+                    src="/assets/img/icon/icon1.svg"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                 </div>
                 <div className="features-caption">
                   <h3>60+ UX courses</h3>
@@ -282,7 +342,13 @@ export default function CourseList() {
             <div className="col-lg-4 col-md-6 col-sm-8">
               <div className="single-services mb-30">
                 <div className="features-icon">
-                  <img src="/assets/img/icon/icon2.svg" alt="" />
+                  <Image
+                    src="/assets/img/icon/icon2.svg"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                 </div>
                 <div className="features-caption">
                   <h3>Expert instructors</h3>
@@ -293,7 +359,13 @@ export default function CourseList() {
             <div className="col-lg-4 col-md-6 col-sm-8">
               <div className="single-services mb-30">
                 <div className="features-icon">
-                  <img src="/assets/img/icon/icon3.svg" alt="" />
+                  <Image
+                    src="/assets/img/icon/icon3.svg"
+                    alt=""
+                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    width={500}
+                    height={300}
+                  />
                 </div>
                 <div className="features-caption">
                   <h3>Life time access</h3>

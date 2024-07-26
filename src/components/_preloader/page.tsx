@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import "./style.css";
 import "../../app/ext-style.css";
+import Image from "next/image";
 
 function PreLoader() {
   const [isMounted, setIsMounted] = useState(false);
@@ -30,7 +31,13 @@ function PreLoader() {
         <div className="preloader-inner position-relative">
           <div className="preloader-circle"></div>
           <div className="preloader-img pere-text">
-            <img src="/assets/img/logo/loder.png" alt="Preloader" />
+            <Image
+              src="/assets/img/logo/loder.png"
+              alt="Preloader"
+              style={{width: "100%", height: "auto", objectFit: "cover"}}
+              width={500}
+              height={300}
+            />
           </div>
         </div>
       </div>

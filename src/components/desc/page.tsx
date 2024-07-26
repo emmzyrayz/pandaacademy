@@ -1,6 +1,7 @@
 import "./style.css";
 import "../../app/ext-style.css";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
+import Image from "next/image";
 
 function AboutA1() {
   return (
@@ -8,7 +9,14 @@ function AboutA1() {
       <div className="support-wrapper align-items-center">
         <div className="left-content1">
           <div className="about-icon">
-            <img src="/assets/img/icon/about.svg" alt="" />
+            <Image
+              src="/assets/img/icon/about.svg"
+              alt=""
+              layout="responsive"
+              width={100}
+              height={100}
+              objectFit="cover"
+            />
           </div>
           {/* <!-- section tittle --> */}
           <div className="section-tittle section-tittle2 mb-55">
@@ -23,7 +31,14 @@ function AboutA1() {
           </div>
           <div className="single-features">
             <div className="features-icon">
-              <img src="/assets/img/icon/right-icon.svg" alt="" />
+              <Image
+                src="/assets/img/icon/right-icon.svg"
+                alt=""
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
             </div>
             <div className="features-caption">
               <p>
@@ -34,7 +49,14 @@ function AboutA1() {
           </div>
           <div className="single-features">
             <div className="features-icon">
-              <img src="/assets/img/icon/right-icon.svg" alt="" />
+              <Image
+                src="/assets/img/icon/right-icon.svg"
+                alt=""
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
             </div>
             <div className="features-caption">
               <p>
@@ -45,7 +67,14 @@ function AboutA1() {
 
           <div className="single-features">
             <div className="features-icon">
-              <img src="/assets/img/icon/right-icon.svg" alt="" />
+              <Image
+                src="/assets/img/icon/right-icon.svg"
+                alt=""
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
             </div>
             <div className="features-caption">
               <p>
@@ -58,7 +87,14 @@ function AboutA1() {
         <div className="right-content1">
           {/* <!-- img --> */}
           <div className="right-img">
-            <img src="/assets/img/gallery/about.png" alt="" />
+            <Image
+              src="/assets/img/gallery/about.png"
+              alt=""
+              layout="responsive"
+              width={100}
+              height={100}
+              objectFit="cover"
+            />
 
             <div className="video-icon">
               <a
@@ -82,7 +118,14 @@ function AboutA2() {
         <div className="right-content2">
           {/* <!-- img --> */}
           <div className="right-img">
-            <img src="/assets/img/gallery/about2.png" alt="" />
+            <Image
+              src="/assets/img/gallery/about2.png"
+              alt=""
+              layout="responsive"
+              width={100}
+              height={100}
+              objectFit="cover"
+            />
           </div>
         </div>
         <div className="left-content2">
@@ -116,7 +159,14 @@ function AboutA3() {
         <div className="right-content3">
           {/* <!-- img --> */}
           <div className="right-img">
-            <img src="/assets/img/gallery/about3.png" alt="" />
+            <Image
+              src="/assets/img/gallery/about3.png"
+              alt=""
+              layout="responsive"
+              width={100}
+              height={100}
+              objectFit="cover"
+            />
           </div>
         </div>
         <div className="left-content3">
@@ -128,7 +178,14 @@ function AboutA3() {
           </div>
           <div className="single-features">
             <div className="features-icon">
-              <img src="/assets/img/icon/right-icon.svg" alt="" />
+              <Image
+                src="/assets/img/icon/right-icon.svg"
+                alt=""
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
             </div>
             <div className="features-caption">
               <p>
@@ -139,7 +196,14 @@ function AboutA3() {
           </div>
           <div className="single-features">
             <div className="features-icon">
-              <img src="/assets/img/icon/right-icon.svg" alt="" />
+              <Image
+                src="/assets/img/icon/right-icon.svg"
+                alt=""
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
             </div>
             <div className="features-caption">
               <p>
@@ -149,7 +213,14 @@ function AboutA3() {
           </div>
           <div className="single-features">
             <div className="features-icon">
-              <img src="/assets/img/icon/right-icon.svg" alt="" />
+              <Image
+                src="/assets/img/icon/right-icon.svg"
+                alt=""
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
             </div>
             <div className="features-caption">
               <p>

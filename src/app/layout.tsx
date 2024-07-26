@@ -7,6 +7,8 @@ import Footer from "../components/_footer/page";
 import PreLoader from "../components/_preloader/page";
 import {noHeaderFooterPaths} from "./utils/constants";
 import "./style.css";
+import "../../public/assets/css/progressbar_barfiller.css";
+import "../../public/assets/css/animated-headline.css";;
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   const pathname = usePathname();
@@ -120,30 +122,83 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 
         {/* Css Styling here */}
         {/* <link rel="stylesheet" href="./ext-style.css" /> */}
-        <link rel="stylesheet" href="/assets/css/progressbar_barfiller.css" />
-        <link rel="stylesheet" href="/assets/css/animated-headline.css" />
 
         {/* Scripts Here */}
-        <script src="https://cdn.jsdelivr.net/npm/modernizr@3.13.0/lib/cli.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.13/js/gijgo.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxchimp/1.3.0/jquery.ajaxchimp.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/flaticon@0.1.0/main.min.js"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/modernizr@3.13.0/lib/cli.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/gijgo@1.9.13/js/gijgo.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxchimp/1.3.0/jquery.ajaxchimp.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/flaticon@0.1.0/main.min.js"
+          async
+        ></script>
         <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          async
         ></script>
 
         {/* javascript file */}

@@ -1,7 +1,7 @@
-function tutorDetail() {
+function TutorDetail() {
     return (
         <></>
     )
 };
 
-export default tutorDetail;
+export default TutorDetail;

@@ -1,16 +1,23 @@
-import Link  from "next/link";
-import "./style.css"
+import Link from "next/link";
+import "./style.css";
+import Image from "next/image";
 
 function Login() {
   return (
     <>
-      <main className="login-body" >
+      <main className="login-body">
         <form action="/auth/login" className="form-default" method="post">
           <div className="login-form">
             {/* Logo-login */}
             <div className="logo-login">
               <a href="/">
-                <img src="/assets/img/logo/panda.png" alt="Logo" />
+                <Image
+                  src="/assets/img/logo/panda.png"
+                  alt="Logo"
+                  style={{width: "100%", height: "auto", objectFit: "cover"}}
+                  width={500}
+                  height={300}
+                />
               </a>
             </div>
             <h2>Login Here</h2>

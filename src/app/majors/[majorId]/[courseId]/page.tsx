@@ -9,7 +9,7 @@ import {faAngleUp, faAngleDown} from "@fortawesome/free-solid-svg-icons";
 import "../../style.css"
 
 
-function courseDetail() {
+function CourseDetail() {
   const params = useParams();
   const {majorId, courseId} = params;
 
@@ -99,4 +99,4 @@ function courseDetail() {
   );
 }
 
-export default courseDetail;
+export default CourseDetail;

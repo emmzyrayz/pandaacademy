@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import "./style.css";
 import "../../app/ext-style.css";
-import { FaUserCircle } from "react-icons/fa";
+import {FaUserCircle} from "react-icons/fa";
+import Image from "next/image";
 
 function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -22,7 +23,14 @@ function Header() {
               <div className="col-xl-2 col-lg-2">
                 <div className="logo">
                   <a href="/">
-                    <img src="/assets/img/logo/logo.png" alt="" />
+                    <Image
+                      src="/assets/img/logo/logo.png"
+                      alt=""
+                      layout="responsive"
+                      width={100}
+                      height={100}
+                      objectFit="cover"
+                    />
                   </a>
                 </div>
               </div>
@@ -59,10 +67,15 @@ function Header() {
                           <a href="contact.html">Contact</a>
                         </li>
                         {/* Button */}
-                        <li id="userProfile" className="dispNone user-pro align-items-center">
+                        <li
+                          id="userProfile"
+                          className="dispNone user-pro align-items-center"
+                        >
                           {/* Placeholder for user profile */}
                           <FaUserCircle className="userImg" />
-                          <span id="userName" className="fs-16 fw-600">Martin Balogun</span>
+                          <span id="userName" className="fs-16 fw-600">
+                            Martin Balogun
+                          </span>
                           <a href="/login" className="btn">
                             Log Out
                           </a>
