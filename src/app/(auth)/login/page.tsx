@@ -14,7 +14,7 @@ function Login() {
                 <Image
                   src="/assets/img/logo/panda.png"
                   alt="Logo"
-                  style={{width: "100%", height: "auto", objectFit: "cover"}}
+                  style={{width: "130", height: "130", objectFit: "cover"}}
                   width={500}
                   height={300}
                 />

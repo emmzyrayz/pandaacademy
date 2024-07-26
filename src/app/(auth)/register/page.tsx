@@ -41,9 +41,9 @@ function Register() {
               <Image
                 src="/assets/img/logo/panda.png"
                 alt="Logo"
-                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                style={{width: "130px", height: "130px", objectFit: "cover"}}
                 width={500}
-                height={300}
+                height={100}
               />
             </a>
           </div>
