@@ -22,10 +22,13 @@ function Footer() {
                           src="/assets/img/logo/logo.png"
                           alt="footer-logo"
                           className="logo-png"
-                          layout="responsive"
-                          width={100}
-                          height={100}
-                          objectFit="cover"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "cover",
+                          }}
+                          width={500}
+                          height={300}
                         />
                       </a>
                     </div>

@@ -203,14 +203,23 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 
         {/* javascript file */}
 
-        <script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.sticky.js"></script>
-        <script src="./assets/js/jquery.barfiller.js"></script>
-        <script src="./assets/js/hover-direction-snake.min.js"></script>
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/plugins.js"></script>
-        <script src="./assets/js/main.js"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/js/jquery.animatedheadline.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"
+          async
+        ></script>
+        <script
+          src="https://github.com/9bitStudios/barfiller/blob/master/js/jquery.barfiller.js"
+          async
+        ></script>
+        <script src="/assets/js/hover-direction-snake.min.js" async></script>
+        <script src="/assets/js/contact.js" async></script>
+        <script src="/assets/js/mail-script.js" async></script>
+        <script src="/assets/js/plugins.js" async></script>
+        <script src="/assets/js/main.js" async></script>
       </head>
       <body>
         <PreLoader />

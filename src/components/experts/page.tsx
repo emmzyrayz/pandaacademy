@@ -80,10 +80,9 @@ function Experts() {
               <Image
                 src="/assets/img/gallery/team1.png"
                 alt=""
-                layout="responsive"
-                width={100}
-                height={100}
-                objectFit="cover"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={500}
+                height={300}
               />
             </div>
             <div className="cat-cap">
@@ -98,10 +97,9 @@ function Experts() {
               <Image
                 src="/assets/img/gallery/team2.png"
                 alt=""
-                layout="responsive"
-                width={100}
-                height={100}
-                objectFit="cover"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={500}
+                height={300}
               />
             </div>
             <div className="cat-cap">
@@ -116,10 +114,9 @@ function Experts() {
               <Image
                 src="/assets/img/gallery/team3.png"
                 alt=""
-                layout="responsive"
-                width={100}
-                height={100}
-                objectFit="cover"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={500}
+                height={300}
               />
             </div>
             <div className="cat-cap">
@@ -134,10 +131,9 @@ function Experts() {
               <Image
                 src="/assets/img/gallery/team4.png"
                 alt=""
-                layout="responsive"
-                width={100}
-                height={100}
-                objectFit="cover"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={500}
+                height={300}
               />
             </div>
             <div className="cat-cap">
@@ -152,10 +148,9 @@ function Experts() {
               <Image
                 src="/assets/img/gallery/team3.png"
                 alt=""
-                layout="responsive"
-                width={100}
-                height={100}
-                objectFit="cover"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={500}
+                height={300}
               />
             </div>
             <div className="cat-cap">

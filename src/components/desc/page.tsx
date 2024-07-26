@@ -12,10 +12,9 @@ function AboutA1() {
             <Image
               src="/assets/img/icon/about.svg"
               alt=""
-              layout="responsive"
-              width={100}
-              height={100}
-              objectFit="cover"
+              style={{width: "100%", height: "auto", objectFit: "cover"}}
+              width={500}
+              height={300}
             />
           </div>
           {/* <!-- section tittle --> */}
@@ -34,10 +33,9 @@ function AboutA1() {
               <Image
                 src="/assets/img/icon/right-icon.svg"
                 alt=""
-                layout="responsive"
-                width={100}
-                height={100}
-                objectFit="cover"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={500}
+                height={300}
               />
             </div>
             <div className="features-caption">
@@ -52,10 +50,9 @@ function AboutA1() {
               <Image
                 src="/assets/img/icon/right-icon.svg"
                 alt=""
-                layout="responsive"
-                width={100}
-                height={100}
-                objectFit="cover"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={300}
+                height={200}
               />
             </div>
             <div className="features-caption">
@@ -70,10 +67,9 @@ function AboutA1() {
               <Image
                 src="/assets/img/icon/right-icon.svg"
                 alt=""
-                layout="responsive"
-                width={100}
-                height={100}
-                objectFit="cover"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={500}
+                height={300}
               />
             </div>
             <div className="features-caption">
@@ -88,12 +84,11 @@ function AboutA1() {
           {/* <!-- img --> */}
           <div className="right-img">
             <Image
-              src="/assets/img/gallery/about.png"
+              src="/assets/img/gallery/about2.png"
               alt=""
-              layout="responsive"
-              width={100}
-              height={100}
-              objectFit="cover"
+              style={{width: "100%", height: "auto", objectFit: "fill"}}
+              width={500}
+              height={300}
             />
 
             <div className="video-icon">
@@ -121,10 +116,9 @@ function AboutA2() {
             <Image
               src="/assets/img/gallery/about2.png"
               alt=""
-              layout="responsive"
-              width={100}
-              height={100}
-              objectFit="cover"
+              style={{width: "100%", height: "auto", objectFit: "cover"}}
+              width={500}
+              height={300}
             />
           </div>
         </div>
@@ -162,10 +156,9 @@ function AboutA3() {
             <Image
               src="/assets/img/gallery/about3.png"
               alt=""
-              layout="responsive"
-              width={100}
-              height={100}
-              objectFit="cover"
+              style={{width: "100%", height: "auto", objectFit: "cover"}}
+              width={500}
+              height={300}
             />
           </div>
         </div>
@@ -181,10 +174,9 @@ function AboutA3() {
               <Image
                 src="/assets/img/icon/right-icon.svg"
                 alt=""
-                layout="responsive"
-                width={100}
-                height={100}
-                objectFit="cover"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={500}
+                height={300}
               />
             </div>
             <div className="features-caption">
@@ -199,10 +191,9 @@ function AboutA3() {
               <Image
                 src="/assets/img/icon/right-icon.svg"
                 alt=""
-                layout="responsive"
-                width={100}
-                height={100}
-                objectFit="cover"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={500}
+                height={300}
               />
             </div>
             <div className="features-caption">
@@ -216,10 +207,9 @@ function AboutA3() {
               <Image
                 src="/assets/img/icon/right-icon.svg"
                 alt=""
-                layout="responsive"
-                width={100}
-                height={100}
-                objectFit="cover"
+                style={{width: "100%", height: "auto", objectFit: "cover"}}
+                width={500}
+                height={300}
               />
             </div>
             <div className="features-caption">

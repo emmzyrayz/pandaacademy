@@ -328,7 +328,7 @@ export default function CourseList() {
                   <Image
                     src="/assets/img/icon/icon1.svg"
                     alt=""
-                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    style={{width: "auto", height: "auto", objectFit: "cover"}}
                     width={500}
                     height={300}
                   />
@@ -345,7 +345,7 @@ export default function CourseList() {
                   <Image
                     src="/assets/img/icon/icon2.svg"
                     alt=""
-                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    style={{width: "auto", height: "auto", objectFit: "cover"}}
                     width={500}
                     height={300}
                   />
@@ -362,7 +362,7 @@ export default function CourseList() {
                   <Image
                     src="/assets/img/icon/icon3.svg"
                     alt=""
-                    style={{width: "100%", height: "auto", objectFit: "cover"}}
+                    style={{width: "auto", height: "auto", objectFit: "cover"}}
                     width={500}
                     height={300}
                   />

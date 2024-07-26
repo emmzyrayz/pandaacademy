@@ -26,10 +26,13 @@ function Header() {
                     <Image
                       src="/assets/img/logo/logo.png"
                       alt=""
-                      layout="responsive"
-                      width={100}
-                      height={100}
-                      objectFit="cover"
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        objectFit: "cover",
+                      }}
+                      width={500}
+                      height={300}
                     />
                   </a>
                 </div>
@@ -44,27 +47,27 @@ function Header() {
                           <a href="/">Home</a>
                         </li>
                         <li>
-                          <a href="courses.html">Courses</a>
+                          <a href="/majors">Courses</a>
                         </li>
                         <li>
-                          <a href="about.html">About</a>
+                          <a href="/about">About</a>
                         </li>
                         <li>
-                          <a href="#">Blog</a>
+                          <a href="/blog">Blog</a>
                           <ul className="submenu">
                             <li>
-                              <a href="blog.html">Blog</a>
+                              <a href="/blog">Blog</a>
                             </li>
                             <li>
-                              <a href="blog_details.html">Blog Details</a>
+                              <a href="/blog">Blog Details</a>
                             </li>
                             <li>
-                              <a href="elements.html">Element</a>
+                              <a href="/blog">Element</a>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a href="contact.html">Contact</a>
+                          <a href="/contact">Contact</a>
                         </li>
                         {/* Button */}
                         <li
@@ -116,22 +119,22 @@ function Header() {
                     role="menu"
                   >
                     <li className="active">
-                      <a href="index.html" role="menuitem">
+                      <a href="/" role="menuitem">
                         Home
                       </a>
                     </li>
                     <li>
-                      <a href="courses.html" role="menuitem">
+                      <a href="/majors" role="menuitem">
                         Courses
                       </a>
                     </li>
                     <li>
-                      <a href="about.html" role="menuitem">
+                      <a href="/about" role="menuitem">
                         About
                       </a>
                     </li>
                     <li>
-                      <a href="contact.html" role="menuitem">
+                      <a href="/contact" role="menuitem">
                         Contact
                       </a>
                     </li>
@@ -146,7 +149,7 @@ function Header() {
                     </li>
                     <li className="authLinks disFlex">
                       <span className="button-header margin-left">
-                        <a href="register.html" className="btn" role="menuitem">
+                        <a href="/register" className="btn" role="menuitem">
                           Join
                         </a>
                       </span>

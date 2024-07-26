@@ -3,4 +3,7 @@ export const noHeaderFooterPaths = [
   "/register",
   "/forgot-password",
   "/majors/[majorId]",
+  "/not-found",
+  "/_not-found",
+  "/benin",
 ];
