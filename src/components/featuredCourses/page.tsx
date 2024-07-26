@@ -53,7 +53,7 @@ function FeaturedCourse() {
                       <span>$135</span>
                     </div>
                   </div>
-                  <a href="#" className="border-btn border-btn2">
+                  <a href="/majors" className="border-btn border-btn2">
                     Find out more ...
                   </a>
                 </div>
@@ -74,7 +74,7 @@ function FeaturedCourse() {
                 <div className="properties__caption">
                   <p>Javascript</p>
                   <h3>
-                    <a href="#">
+                    <a href="/majors">
                       Fundamentals of Javascript ES6+ for Web Application Design
                     </a>
                   </h3>
@@ -100,7 +100,7 @@ function FeaturedCourse() {
                       <span>$135</span>
                     </div>
                   </div>
-                  <a href="#" className="border-btn border-btn2">
+                  <a href="/majors" className="border-btn border-btn2">
                     Find out more ...
                   </a>
                 </div>
@@ -147,7 +147,7 @@ function FeaturedCourse() {
                       <span>$135</span>
                     </div>
                   </div>
-                  <a href="#" className="border-btn border-btn2">
+                  <a href="/majors" className="border-btn border-btn2">
                     Find out more ...
                   </a>
                 </div>
