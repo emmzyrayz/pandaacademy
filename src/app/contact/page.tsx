@@ -1,5 +1,6 @@
 "use client";
 import {useState} from "react";
+import axios from "axios";
 import "./style.css";
 import "../style.css";
 import "@fortawesome/fontawesome-free";
@@ -10,20 +11,60 @@ import { faEnvelope, faHouse, faTablet } from "@fortawesome/free-solid-svg-icons
 
 function Contact() {
 
-    const [placeholders, setPlaceholders] = useState({
-      message: "Enter Message",
-      name: "Enter your name",
-      email: "Enter email address",
-      subject: "Enter Subject",
-    });
+  const [placeholders, setPlaceholders] = useState({
+    message: "Enter Message",
+    name: "Enter your name",
+    email: "Enter email address",
+    subject: "Enter Subject",
+  });
 
-    const handleFocus = (field: string) => {
-      setPlaceholders((prev) => ({...prev, [field]: ""}));
-    };
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-    const handleBlur = (field: string, defaultPlaceholder: string) => {
-      setPlaceholders((prev) => ({...prev, [field]: defaultPlaceholder}));
-    };
+  const handleFocus = (field: string) => {
+    setPlaceholders((prev) => ({...prev, [field]: ""}));
+  };
+
+  const handleBlur = (field: string, defaultPlaceholder: string) => {
+    setPlaceholders((prev) => ({...prev, [field]: defaultPlaceholder}));
+  };
+
+  const [status, setStatus] = useState("");
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const {name, value} = e.target;
+    setFormData({...formData, [name]: value});
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("Message sent successfully");
+        setFormData({name: "", email: "", subject: "", message: ""});
+      } else {
+        setStatus("Failed to send message");
+      }
+    } catch (error) {
+      setStatus("Error sending message");
+    }
+  };
 
 
   return (
@@ -70,9 +111,8 @@ function Contact() {
             </div>
             <div className="col-lg-8">
               <form
-                action="/contact_process"
+                onSubmit={handleSubmit}
                 className="form-contact contact_form"
-                method="post"
                 id="contactForm"
                 noValidate
               >
@@ -85,6 +125,8 @@ function Contact() {
                         id="message"
                         cols={30}
                         rows={9}
+                        value={formData.message}
+                        onChange={handleChange}
                         onFocus={() => handleFocus("message")}
                         onBlur={() => handleBlur("message", "Enter Message")}
                         placeholder={placeholders.message}
@@ -98,6 +140,8 @@ function Contact() {
                         name="name"
                         id="name"
                         type="text"
+                        value={formData.name}
+                        onChange={handleChange}
                         onFocus={() => handleFocus("name")}
                         onBlur={() => handleBlur("name", "Enter your name")}
                         placeholder={placeholders.name}
@@ -111,6 +155,8 @@ function Contact() {
                         name="email"
                         id="email"
                         type="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         onFocus={() => handleFocus("email")}
                         onBlur={() =>
                           handleBlur("email", "Enter email address")
@@ -126,6 +172,8 @@ function Contact() {
                         name="subject"
                         id="subject"
                         type="text"
+                        value={formData.subject}
+                        onChange={handleChange}
                         onFocus={() => handleFocus("subject")}
                         onBlur={() => handleBlur("subject", "Enter Subject")}
                         placeholder={placeholders.subject}
@@ -140,6 +188,7 @@ function Contact() {
                   >
                     Send
                   </button>
+                  {status && <p>{status}</p>}
                 </div>
               </form>
             </div>
@@ -167,7 +216,11 @@ function Contact() {
                   <FontAwesomeIcon icon={faEnvelope} />
                 </span>
                 <div className="media-body">
-                  <h3>support@pandaacademy.com</h3>
+                  <h3>
+                    <a href="mailto:pandaacademybootcamp@gmail.com">
+                      support@pandaacademy.com
+                    </a>
+                  </h3>
                   <p>Send us your query anytime!</p>
                 </div>
               </div>
