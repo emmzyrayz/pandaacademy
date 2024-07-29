@@ -113,15 +113,22 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .main-header .main-menu {
-        margin-right: 30px
+        margin-right: 30px;
     }
+}
+
+ul#navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-header .main-menu ul li {
     display: inline-block;
     position: relative;
     z-index: 1;
-    margin: 0 27px
+    margin: 0 27px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -344,9 +351,10 @@
     opacity: .8;
 }
 
-.mobile_menu .slicknav_nav .disFlex {
-    display: flex;
-    gap: 10px;
+.disFlex {
+    display: flex !important;
+    flex-direction: row;
+    gap: 5px !important;
 }
 
 .mobile_menu .slicknav_menu .slicknav_nav .slicknav_item a {
@@ -478,4 +486,10 @@
 
 .dispNone {
     display: none !important;
+}
+
+.authLinks {
+    display: flex !important;
+    width: auto;
+    gap: 10px;
 }

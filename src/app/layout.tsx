@@ -8,7 +8,8 @@ import PreLoader from "../components/_preloader/page";
 import {noHeaderFooterPaths} from "./utils/constants";
 import "./style.css";
 import "../../public/assets/css/progressbar_barfiller.css";
-import "../../public/assets/css/animated-headline.css";;
+import "../../public/assets/css/animated-headline.css";
+// import "themify-icons/css/themify-icons.css";
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   const pathname = usePathname();

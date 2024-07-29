@@ -12,7 +12,7 @@ function AboutA1() {
             <Image
               src="/assets/img/icon/about.svg"
               alt=""
-              style={{width: "100%", height: "auto", objectFit: "cover"}}
+              style={{width: "auto", height: "auto", objectFit: "cover"}}
               width={500}
               height={300}
             />

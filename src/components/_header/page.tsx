@@ -1,3 +1,4 @@
+'use client'
 import React, {useState} from "react";
 import "./style.css";
 import "../../app/ext-style.css";
