@@ -9,10 +9,19 @@ import '@fortawesome/fontawesome-free';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
+// Define the expected shape of the parameters
+interface Params {
+  majorId?: string;
+}
+
 
 const MajorPage = () => {
-  const params = useParams();
+  // Type the params as Params
+  const params = useParams() as Params;
+
+  // Destructure and handle the possibility of undefined values
   const {majorId} = params;
+  
   const majors = majorData.majors;
   const major = majors.find((m) => m.majorId === majorId);
 

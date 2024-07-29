@@ -4,8 +4,17 @@ import majorData from "../../../../../components/_lib/data/courses.json";
 import Link from "next/link";
 import "../../../style.css";
 
+// Define the expected shape of the parameters
+interface Params {
+  majorId?: string;
+  courseId?: string;
+  topicId?: string;
+}
+
 const TopicDetail = () => {
-  const params = useParams();
+  const params = useParams() as Params; // Type the params as Params
+
+  // Destructure and handle the possibility of undefined values
   const {majorId, courseId, topicId} = params;
 
   // Find the major

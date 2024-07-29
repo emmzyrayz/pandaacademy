@@ -85,27 +85,27 @@ const About = () => {
                   <strong>Why Choose Us?</strong>
                 </h2>
                 <p className="mbr-text align-left mbr-fonts-style mb-3 display-7">
-                  At Panda Academy, we don’t just teach you to code; we turn you
-                  into a coding ninja! Our bootcamp is designed for those who
-                  want to dive headfirst into the tech world without drowning in
-                  boring lectures. We believe in hands-on learning, where you’ll
-                  build real projects that make your portfolio shine brighter
-                  than a supernova!
+                  At Panda Academy, we don&apos;t just teach you to code; we
+                  turn you into a coding ninja! Our bootcamp is designed for
+                  those who want to dive headfirst into the tech world without
+                  drowning in boring lectures. We believe in hands-on learning,
+                  where you&apos;ll build real projects that make your portfolio
+                  shine brighter than a supernova!
                 </p>
                 <p className="mbr-text align-left mbr-fonts-style mb-3 display-7">
                   Our mission? To transform aspiring coders into job-ready
-                  developers faster than you can say 'JavaScript'. With our
-                  expert instructors, who have more experience than your average
-                  superhero, you’ll learn the latest technologies and frameworks
-                  that employers are actually looking for. Forget the fluff; we
-                  give you the real deal!
+                  developers faster than you can say &apos;JavaScript&apos;.
+                  With our expert instructors, who have more experience than
+                  your average superhero, you&apos;ll learn the latest
+                  technologies and frameworks that employers are actually
+                  looking for. Forget the fluff; we give you the real deal!
                 </p>
                 <p className="mbr-text align-left mbr-fonts-style mb-3 display-7">
                   Join a community of like-minded individuals who are just as
-                  passionate about coding as you are. Whether you’re a complete
-                  newbie or a seasoned pro looking to level up, Panda Academy is
-                  your ultimate coding playground. So, what are you waiting for?
-                  Let’s code the future together!
+                  passionate about coding as you are. Whether you&apos;re a
+                  complete newbie or a seasoned pro looking to level up, Panda
+                  Academy is your ultimate coding playground. So, what are you
+                  waiting for? Let&apos;s code the future together!
                 </p>
               </div>
             </div>
@@ -217,8 +217,8 @@ const About = () => {
               <strong>What Our Students Say</strong>
             </h2>
             <p className="mbr-text align-left mbr-fonts-style mb-3 display-7">
-              "Panda Academy transformed my coding skills and helped me land my
-              dream job in tech!" - Jane Doe
+              &quot;Panda Academy transformed my coding skills and helped me
+              land my dream job in tech!&quot; - Jane Doe
             </p>
             <h2 className="mbr-section-title mbr-fonts-style mb-4 display-4">
               <strong>Get in Touch</strong>

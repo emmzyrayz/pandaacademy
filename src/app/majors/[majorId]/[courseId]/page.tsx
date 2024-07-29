@@ -6,11 +6,20 @@ import Link from "next/link";
 import majorData from "../../../../components/_lib/data/courses.json";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleUp, faAngleDown} from "@fortawesome/free-solid-svg-icons";
-import "../../style.css"
+import "../../style.css";
+
+// Define the expected shape of the parameters
+interface Params {
+  majorId?: string;
+  courseId?: string;
+}
 
 
 function CourseDetail() {
-  const params = useParams();
+  // Type the params as Params
+  const params = useParams() as Params;
+
+  // Destructure and handle the possibility of undefined values
   const {majorId, courseId} = params;
 
   // Find the major

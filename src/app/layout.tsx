@@ -15,9 +15,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   const pathname = usePathname();
   
   // Check if the current route matches any of the paths where header and footer should be hidden
-  const shouldHideHeaderFooter = noHeaderFooterPaths.some((path) =>
-    pathname.startsWith(path)
-  );
+  const shouldHideHeaderFooter = pathname
+    ? noHeaderFooterPaths.some((path) => pathname.startsWith(path))
+    : false;
 
   useEffect(() => {
     // Handle scroll events and back-to-top button click
