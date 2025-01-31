@@ -7,6 +7,12 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+        sm: "320px", // Mobile S
+        md: "550px", // Mobile M
+        lg: "860px", // Mobile L
+        xl: "1020px", // Laptop
+      },
     extend: {
       colors: {
         background: "var(--background)",

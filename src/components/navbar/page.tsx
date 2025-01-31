@@ -1,7 +1,7 @@
 'use client'
 
 import React, {useState, useEffect, useRef} from 'react'
-import NavLogo from "@/assets/img/logo/logo.png";
+import NavLogo from "@/assets/img/logo/logo-black.png";
 import Image from "next/image";
 import Link from "next/link";
 import './nav.css';
@@ -67,53 +67,78 @@ export const Navbar = () => {
 
   return (
     <div className="relative flex flex-row items-center justify-between">
-      <div className="navbar-section flex flex-row items-center justify-between bg-black/30 p-3 w-full relative">
-        <div className="logo-section w-[40%] h-full flex items-center justify-center">
-          <Image
-            src={NavLogo}
-            alt="logo"
-            width={500}
-            height={300}
-            className="w-full h-full p-0 object-cover"
-          />
-        </div>
+      <div className="navbar-section flex flex-row items-center justify-between bg-transparent p-3 w-full relative">
+        <Link
+          href="/"
+          className="cursor-pointer w-[30%] h-full flex items-center justify-center relative hover:bg-black/20 p-3 rounded-md"
+        >
+          <div className="logo-section ">
+            <Image
+              src={NavLogo}
+              alt="logo"
+              width={500}
+              height={300}
+              className="w-full h-full p-0 object-cover"
+            />
+          </div>
+        </Link>
 
-        <div className="nav-btn md:flex flex-row gap-2 text-[14px] font-semibold hidden">
+        <div className="nav-btn hidden md:flex flex-row gap-2 text-[14px] font-semibold">
           <Link href="#">
-            <span>Home</span>
+            <span>
+              <p>Home</p>
+              <hr />
+            </span>
           </Link>
 
           <Link href="#">
-            <span>Courses</span>
+            <span>
+              <p>Courses</p>
+              <hr />
+            </span>
           </Link>
 
           <Link href="#">
-            <span>About</span>
+            <span>
+              <p>About</p>
+              <hr />
+            </span>
           </Link>
 
           <Link href="#">
-            <span>Contact</span>
+            <span>
+              <p>Contact</p>
+              <hr />
+            </span>
           </Link>
 
           <div className="auth-btn">
             <Link href="#">
-              <span>Join</span>
+              <span>
+                <p>Join</p>
+                <hr />
+              </span>
             </Link>
 
-            <Link href="#" className='hidden'>
-              <span>Log In</span>
+            <Link href="#" className="hidden">
+              <span>
+                <p>Log In</p>
+                <hr />
+              </span>
             </Link>
           </div>
         </div>
 
         <div
           ref={hamburgerRef}
-          className="hamburg gap-2 md:hidden flex flex-col p-2 items-center justify-center cursor-pointer"
+          className={`hamburg gap-2 flex md:hidden flex-col p-2 items-center justify-center cursor-pointer ${
+            isOpen ? "open" : ""
+          }`}
           onClick={handleClicked}
         >
-          <span className="flex items-center w-[40px] h-[4px] rounded bg-black border-[2px] border-black"></span>
-          <span className="flex items-center w-[40px] h-[4px] rounded bg-black border-[2px] border-black"></span>
-          <span className="flex items-center w-[40px] h-[4px] rounded bg-black border-[2px] border-black"></span>
+          <span className="hamburg-line line-1"></span>
+          <span className="hamburg-line line-2"></span>
+          <span className="hamburg-line line-3"></span>
         </div>
       </div>
       {/* Conditionally Render NavMenu */}
