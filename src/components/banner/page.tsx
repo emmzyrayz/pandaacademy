@@ -209,7 +209,7 @@ export const Banner = () => {
   };
 
   return (
-    <div className="relative w-full h-[98vh] flex flex-col items-center justify-start mb-[140px]">
+    <div className="relative w-full h-[98vh] flex flex-col items-center justify-start mb-[240px] lg:mb-[140px]">
       <div className="banner-section h-[70vh] w-full relative overflow-hidden">
         {bannerData.map((slide, index) => (
           <div
@@ -326,7 +326,7 @@ export const DemoCardCarousel = () => {
   const calculateCardPosition = (index: number) => {
     const totalCards = cardData.length;
     // Adjust radius based on screen size
-    const baseRadius = windowWidth >= 1024 ? 800 : 600;
+    const baseRadius = windowWidth >= 1024 ? 700 : 600;
     const angleStep = (2 * Math.PI) / totalCards;
     const currentAngle = (index - currentIndex) * angleStep;
 
@@ -336,8 +336,14 @@ export const DemoCardCarousel = () => {
       ((index - currentIndex + totalCards) % totalCards) - totalCards / 2
     );
 
-    const x = (Math.sin(currentAngle) * baseRadius) / 1.6;
-    const z = Math.cos(currentAngle) * baseRadius / 1.5;
+    const x = 
+      windowWidth >= 1024
+        ? (Math.sin(currentAngle) * baseRadius) / 1.2 
+        : (Math.sin(currentAngle) * baseRadius) / 1.6;
+    const z =
+      windowWidth >= 1024
+        ? (Math.cos(currentAngle) * baseRadius) / 1.5
+        : (Math.cos(currentAngle) * baseRadius) / 1.5;
 
     const isVisible = visibleRange <= distanceFromCenter;
 
@@ -346,7 +352,10 @@ export const DemoCardCarousel = () => {
 
     if (isVisible) {
       // Adjust scale and opacity based on distance from center
-      const normalizedDistance = 1 - (visibleRange + 1.5) / distanceFromCenter;
+      const normalizedDistance =
+        windowWidth >= 1024
+          ? 1 - (visibleRange + 1) / distanceFromCenter / 1.2
+          : 1 - (visibleRange + 1.2) / distanceFromCenter;
       scale = 0.6 + normalizedDistance * 0.6; // Scale range: 0.6 to 1.0
       opacity = 0.4 + normalizedDistance * 0.6; // Opacity range: 0.4 to 1.0
     }

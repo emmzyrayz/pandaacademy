@@ -97,16 +97,17 @@ export const MediaRenderer: React.FC<MediaProps> = ({
     switch (currentSource.type) {
       case "image":
         return (
-          <div className="relative w-full h-full">
+          <div className="relative flex items-center justify-center w-full h-full">
             <Image
               src={currentSource.url}
               alt={currentSource.alt || ""}
               fill
-              style={{objectFit: "contain"}}
+              style={{objectFit: "cover"}}
               priority={currentSource.priority}
               onError={handleError}
               onLoad={handleLoad}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
+              className="w-full h-full rounded-lg"
             />
           </div>
         );
@@ -160,7 +161,7 @@ export const MediaRenderer: React.FC<MediaProps> = ({
 
   return (
     <div
-      className={`relative flex items-center justify-center ${className}`}
+      className={`relative flex items-center justify-center w-full h-full ${className}`}
       style={{
         width,
         height,
