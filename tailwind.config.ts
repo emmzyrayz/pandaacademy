@@ -8,11 +8,11 @@ export default {
   ],
   theme: {
     screens: {
-        sm: "320px", // Mobile S
-        md: "550px", // Mobile M
-        lg: "860px", // Mobile L
-        xl: "1020px", // Laptop
-      },
+      sm: "320px", // Mobile S
+      md: "550px", // Mobile M
+      lg: "950px", // Mobile L
+      xl: "1200px", // Laptop
+    },
     extend: {
       colors: {
         background: "var(--background)",
@@ -39,6 +39,15 @@ export default {
       animation: {
         "shadow-pulse": "shadow-pulse 2s ease-in-out infinite",
         glow: "glow 3s ease-in-out infinite",
+      },
+      utilities: {
+        ".scrollbar-hide::-webkit-scrollbar": {
+          display: "none",
+        },
+        ".scrollbar-hide": {
+          "-ms-overflow-style": "none",
+          "scrollbar-width": "none",
+        },
       },
     },
   },

@@ -107,7 +107,7 @@ export const MediaRenderer: React.FC<MediaProps> = ({
               onError={handleError}
               onLoad={handleLoad}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 100vw"
-              className="w-full h-full rounded-lg"
+              className={`w-full h-full ${className}`}
             />
           </div>
         );

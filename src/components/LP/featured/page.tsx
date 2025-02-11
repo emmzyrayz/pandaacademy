@@ -90,28 +90,10 @@ const coursesData: Course[] = [
   }
 ];
 
-// Helper
-// Add type guard functions
-function isStaticImageData(image: string | StaticImageData | null): image is StaticImageData {
-  return image !== null && typeof image !== 'string' && 'src' in image;
-}
-
-function isString(image: string | StaticImageData | null): image is string {
-  return typeof image === 'string';
-}
 
 
 export const FeaturedCourses = () => {
-  // Helper function to get image source and handle error tracking
-  const getImageSource = (image: string | StaticImageData | null) => {
-    if (isStaticImageData(image)) {
-      return image.src;
-    }
-    if (isString(image)) {
-      return image;
-    }
-    return null;
-  };
+ 
 
   return (
     <div className="flex w-full h-full p-[5%]">
@@ -126,7 +108,7 @@ export const FeaturedCourses = () => {
               key={course.id}
               className="featured-item flex flex-col items-center justify-center w-full h-full gap-2 shadow-xl rounded-lg cursor-pointer scale-100 hover:scale-105 hover:shadow-2xl transition-all duration-500 group"
             >
-              <div className="item-img flex items-center justify-center w-full h-54 md:h-64">
+              <div className="item-img flex items-center justify-center w-full h-54 md:h-64 rounded-lg">
                 <MediaRenderer
                   sources={[
                     {
@@ -139,7 +121,7 @@ export const FeaturedCourses = () => {
                   returnNull={false}
                   width='100%'
                   height='100%'
-                  className="w-full h-full"
+                  className="w-full h-full rounded-lg object-cover"
                 />
               </div>
               <div className="item-bottom flex flex-col items-center justify-center w-full h-full p-4 gap-4">

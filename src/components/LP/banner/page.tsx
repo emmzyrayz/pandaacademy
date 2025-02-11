@@ -11,7 +11,17 @@ import Lego from '@/assets/img/gallery/lego.jpg';
 import Leica from '@/assets/img/gallery/leica.jpg';
 import Nashville from '@/assets/img/gallery/nashville.jpg';
 import surf from '@/assets/img/gallery/surf.jpg';
+import Post from '@/assets/img/post/post_5.png';
+import Blog from '@/assets/img/people/gallery/g5.jpg';
+import Post1 from '@/assets/img/post/post_9.png';
 import RedBull from '@/assets/img/gallery/red-bull.jpg';
+
+// avatars
+import Ava1 from '@/assets/img/people/avatar/comment_1.png';
+import Ava2 from '@/assets/img/people/avatar/comment_2.png';
+import Ava3 from '@/assets/img/people/avatar/comment_3.png';
+import Ava4 from '@/assets/img/people/avatar/author.png';
+
 
 // Add type guard functions
 function isStaticImageData(image: string | StaticImageData | null): image is StaticImageData {
@@ -37,6 +47,12 @@ interface CardData {
   title: string;
   description?: string; // Optional field for additional data
   imageUrl?: string | StaticImageData; // Optional field for an image
+  difficulty?: string;
+  wishlist?: boolean;
+  tutorname?: string;
+  tutorimg?: string | StaticImageData;
+  students?: number;
+  rating?: number;
 }
 
 interface DemoCardProps {
@@ -64,7 +80,7 @@ const bannerData: BannerItem[] = [
       "Access courses anytime, anywhere, and learn at your own pace with flexible schedules.",
     btnUrl: "/courses",
     btnText: "Explore Courses",
-    image: "/images/banner2.gif", // Replace with your GIF path
+    image: Post, // Replace with your GIF path
   },
   {
     title: "Expert-Led Courses",
@@ -72,7 +88,7 @@ const bannerData: BannerItem[] = [
       "Learn from industry experts and gain practical skills to advance your career.",
     btnUrl: "/instructors",
     btnText: "Meet Our Instructors",
-    image: null, // No image for this slide
+    image: Blog, // No image for this slide
   },
   {
     title: "Certifications That Matter",
@@ -88,7 +104,7 @@ const bannerData: BannerItem[] = [
       "Connect with learners from around the world and grow your professional network.",
     btnUrl: "/community",
     btnText: "Join the Community",
-    image: "/images/banner4.gif", // Replace with your GIF path
+    image: Post1, // Replace with your GIF path
   },
 ];
 
@@ -99,6 +115,12 @@ const cardData: CardData[] = [
     title: "Card 1",
     description: "Description for Card 1",
     imageUrl: Lego,
+    difficulty: 'intermediate',
+    wishlist: false,
+    tutorname: 'Alonzo Murray',
+    tutorimg: Lego,
+    students: 57,
+    rating: 3.5,
   },
   {
     id: 2,
@@ -158,16 +180,16 @@ const cardData: CardData[] = [
 
 // 1. Slide Timing Configuration
 const SLIDE_DISPLAY_TIME = 7800; // Total time each slide stays (7.8 seconds)
-const FADE_TRANSITION_TIME = 1000; // Fade transition duration (1 second)
-const TRANSITION_DELAY = 500; // Delay before next slide (0.5 seconds)
+// const FADE_TRANSITION_TIME = 1000; // Fade transition duration (1 second)
+// const TRANSITION_DELAY = 500; // Delay before next slide (0.5 seconds)
 
 // 1. Basic Animation Parameters
-const ANIMATION_CONFIG = {
-  radius: 250, // Circle radius for card positioning
-  duration: 0.8, // Animation duration
-  scaleRange: { min: 0.6, max: 1.0 }, // Card scaling limits
-  opacityRange: { min: 0.4, max: 1.0 }, // Card opacity limits
-};
+// const ANIMATION_CONFIG = {
+//   radius: 250, // Circle radius for card positioning
+//   duration: 0.8, // Animation duration
+//   scaleRange: { min: 0.6, max: 1.0 }, // Card scaling limits
+//   opacityRange: { min: 0.4, max: 1.0 }, // Card opacity limits
+// };
 
 
 export const Banner = () => {
@@ -405,6 +427,8 @@ export const DemoCardCarousel = () => {
                   }}
                   initial={false}
                   animate={{
+                    transformStyle: "preserve-3d", // Explicitly set on client and server
+                    transformOrigin: "center center",
                     x: `calc(${position.x}px - 50%)`,
                     y: "-50%",
                     z: position.z,

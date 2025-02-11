@@ -1,30 +1,17 @@
-'use client'
-
-import { Banner } from "@/components/banner/page";
-import { FeaturedCourses } from "@/components/featured/page";
-import { IntroCon } from "@/components/intro/page";
-import { Navbar } from "@/components/navbar/page";
-import { TopCourse } from "@/components/topCourse/page";
-import { useEffect } from "react";
+import { HmNavbar } from '@/components/navbar/page';
+import { redirect } from 'next/navigation';
 
 
 export default function Home() {
 
-  useEffect(() => {
-    const handleResize = () => {
-      console.log("Window width:", window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  // redirect("/landing-page");
 
   return (
-    <div className='bg-white'>
-     <Navbar />
-     <Banner />
-     <FeaturedCourses />
-     <IntroCon />
-     <TopCourse />
+    <div className="flex min-h-screen relative">
+      <HmNavbar className="custom-class" />
+      <div className="flex-1 p-4 lg:ml-[80px]">
+        {/* Your main content here */}
+      </div>
     </div>
   );
 }

@@ -6,6 +6,8 @@ import "./globals.css";
 import { baseMetadata } from "@/utils/metadata"; // Adjust the import path as needed
 import ClientWrapper from '@/components/clientWrapper';
 
+import { NavigationWrapper } from '@/context/navigationWrapper';
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -40,6 +42,8 @@ const sora = localFont({
 const metadata: Metadata = baseMetadata;
 
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -61,9 +65,9 @@ export default function RootLayout({
             <meta name="description" content={metadata.description as string} />
           </head>
       <body>
-          <div>
-              <ClientWrapper>{children}</ClientWrapper>
-            </div>
+          <ClientWrapper>
+          <NavigationWrapper>{children}</NavigationWrapper>
+        </ClientWrapper>
       </body>
     </html>
   );
