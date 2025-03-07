@@ -231,8 +231,8 @@ export const Banner = () => {
   };
 
   return (
-    <div className="relative w-full h-[98vh] flex flex-col items-center justify-start mb-[240px] lg:mb-[140px]">
-      <div className="banner-section h-[70vh] w-full relative overflow-hidden">
+    <div className="relative w-full h-full flex flex-col items-center justify-start mb-[240px] lg:mb-[140px]">
+      <div className="banner-section h-[50vh] lg:h-[70vh] w-full relative overflow-hidden">
         {bannerData.map((slide, index) => (
           <div
             key={index}
@@ -293,8 +293,111 @@ export const Banner = () => {
       </div>
 
       {/* Stacked Card Carousel */}
-      <div className="relative -bottom-[60px] w-full  h-[30vh] z-40">
+      <div className="relative mt-16 lg:mt-[50px] w-full  h-[30vh] z-40">
         <DemoCardCarousel />
+      </div>
+    </div>
+  );
+};
+
+export const MBanner = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [failedImages, setFailedImages] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % bannerData.length);
+    }, SLIDE_DISPLAY_TIME); // Modify this value to change slide duration
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleImageError = (imagePath: string) => {
+    setFailedImages((prev) => new Set(prev).add(imagePath));
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
+
+  // Helper function to get image source and handle error tracking
+  const getImageSource = (image: string | StaticImageData | null) => {
+    if (isStaticImageData(image)) {
+      return image.src;
+    }
+    if (isString(image)) {
+      return image;
+    }
+    return null;
+  };
+
+  // Helper function to check if an image should be displayed
+  const shouldDisplayImage = (image: string | StaticImageData | null) => {
+    if (!image) return false;
+    const src = getImageSource(image);
+    return src && !failedImages.has(src);
+  };
+
+  return (
+    <div className="relative w-full h-full flex flex-col items-center justify-start p-[12px] rounded-xl">
+      <div className="banner-section h-[50vh] lg:h-[70vh] w-full relative overflow-hidden rounded-2xl">
+        {bannerData.map((slide, index) => (
+          <div
+            key={index}
+            className={`banner-item absolute inset-0 flex flex-col items-center justify-center text-center p-4 bg-gradient-to-tr from-white/40 to-black/60 rounded-2xl ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
+            style={{
+              transition: "opacity 1s ease-in-out",
+              transitionDelay: index === currentSlide ? "0s" : "0.5s",
+            }}
+          >
+            {/* Background Image/GIF (Large Screens Only) */}
+            {shouldDisplayImage(slide.image) && (
+              <div className="hidden lg:block absolute inset-0 z-0 rounded-xl">
+                <img
+                  src={getImageSource(slide.image) || ""}
+                  alt={slide.title}
+                  className="w-full h-full object-cover rounded-xl"
+                  onError={() => {
+                    const src = getImageSource(slide.image);
+                    if (src) handleImageError(src);
+                  }}
+                />
+              </div>
+            )}
+
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-black/90 to-white/10 z-10"></div>
+
+            {/* Content */}
+            <div className="relative z-20 text-white max-w-4xl mx-auto">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                {slide.title}
+              </h1>
+              <p className="text-lg md:text-xl mb-6">{slide.description}</p>
+              <a
+                href={slide.btnUrl}
+                className="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-black hover:text-white transition-colors"
+              >
+                {slide.btnText}
+              </a>
+            </div>
+          </div>
+        ))}
+
+        {/* Navigation Dots */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
+          {bannerData.map((_, index) => (
+            <button
+              key={index}
+              className={`w-3 h-3 rounded-full transition-colors hover:bg-white/40 ${
+                index === currentSlide ? "bg-white" : "bg-black/60"
+              }`}
+              onClick={() => goToSlide(index)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

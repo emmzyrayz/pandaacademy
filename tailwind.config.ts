@@ -35,10 +35,16 @@ export default {
             filter: "drop-shadow(0 0 20px rgba(200, 111, 255, 0.8)) blur(4px)",
           },
         },
+        wiggle: {
+          "0%, 100%": {transform: "rotate(0deg)"},
+          "25%": {transform: "rotate(-5deg)"},
+          "75%": {transform: "rotate(5deg)"},
+        },
       },
       animation: {
         "shadow-pulse": "shadow-pulse 2s ease-in-out infinite",
         glow: "glow 3s ease-in-out infinite",
+        wiggle: "wiggle 0.5s ease-in-out",
       },
       utilities: {
         ".scrollbar-hide::-webkit-scrollbar": {
@@ -48,6 +54,12 @@ export default {
           "-ms-overflow-style": "none",
           "scrollbar-width": "none",
         },
+      },
+      backdropBlur: {
+        lg: "24px",
+      },
+      transitionProperty: {
+        opacity: "opacity",
       },
     },
   },

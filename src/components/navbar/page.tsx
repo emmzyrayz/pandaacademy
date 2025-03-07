@@ -17,6 +17,8 @@ import {
   FaRegQuestionCircle,
   FaQuestionCircle,
   FaBox,
+  FaRegBell,
+  FaBell,
 } from "react-icons/fa";
 import {
   IoLogOut,
@@ -24,11 +26,12 @@ import {
   IoSettings,
   IoSettingsOutline,
 } from "react-icons/io5";
-import {BsFillGridFill} from "react-icons/bs";
+import {BsFillGridFill, BsFillPiggyBankFill,  BsPiggyBank} from "react-icons/bs";
 
 // Interface for individual navigation items
 interface NavItemData {
   id: string;
+  url?: string;
   regularIcon: React.ReactNode;
   solidIcon: React.ReactNode;
   text: string;
@@ -44,6 +47,8 @@ interface NavItemProps {
 // Props interface for the main HmNavbar component
 interface HmNavbarProps {
   className?: string;
+  onExpandChange?: (expanded: boolean) => void;
+  forceCollapse?: boolean;
 }
 
 // Define the style type for the CSS custom property
@@ -259,10 +264,16 @@ const LpNavMenu: React.FC<NavMenuProps> = ({isOpen}) => {
 
 // main navbar
 
-export const HmNavbar: React.FC<HmNavbarProps> = ({className}) => {
-  const [isExpanded, setIsExpanded] = useState(true);
+export const HmNavbar: React.FC<HmNavbarProps> = ({
+  className,
+  onExpandChange,
+  forceCollapse = false,
+}) => {
+  const [isExpanded, setIsExpanded] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const navbarRef = useRef<HTMLDivElement>(null);
 
   const navItems: NavItemData[] = [
     {
@@ -270,7 +281,15 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({className}) => {
       regularIcon: <LuLayoutGrid size={24} />,
       solidIcon: <BsFillGridFill size={24} />,
       text: "Dashboard",
+      url: "/dashboard",
+    },
+    {
+      id: "notification",
+      regularIcon: <FaRegBell size={24} />,
+      solidIcon: <FaBell size={24} />,
+      text: "Notification",
       notify: 8,
+      url: "#",
     },
     {
       id: "settings",
@@ -278,6 +297,7 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({className}) => {
       solidIcon: <IoSettings size={24} />,
       text: "Settings",
       notify: 8,
+      url: "#",
     },
     {
       id: "profile",
@@ -285,6 +305,7 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({className}) => {
       solidIcon: <FaUser size={24} />,
       text: "Profile",
       notify: 8,
+      url: "#",
     },
     {
       id: "package",
@@ -292,6 +313,15 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({className}) => {
       solidIcon: <FaBox size={24} />,
       text: "Package",
       notify: 8,
+      url: "#",
+    },
+    {
+      id: "finance",
+      regularIcon: <BsPiggyBank size={24} />,
+      solidIcon: <BsFillPiggyBankFill size={24} />,
+      text: "Finance",
+      notify: 8,
+      url: "#",
     },
   ];
 
@@ -302,63 +332,133 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({className}) => {
       solidIcon: <FaQuestionCircle size={24} />,
       text: "Support",
       notify: 8,
+      url: '#',
     },
     {
       id: "logout",
       regularIcon: <CiLogout size={24} />,
       solidIcon: <IoLogOut size={24} />,
       text: "Logout",
+      
     },
   ];
 
+  // Update expansion state when forceCollapse changes
+  useEffect(() => {
+    if (forceCollapse && isExpanded) {
+      setIsExpanded(true);
+    }
+  }, [forceCollapse]);
+
   const toggleSidebar = () => {
-    setIsExpanded(!isExpanded);
+    setIsAnimating(true);
+    const newExpandedState = !isExpanded;
+    setIsExpanded(newExpandedState);
+    onExpandChange?.(newExpandedState);
+    setTimeout(() => setIsAnimating(false), 500);
   };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const NavItem: React.FC<NavItemProps> = ({item, isExtra = false}) => (
+  const NavItem: React.FC<NavItemProps> = ({item}) => (
     <div
-      className={`nav-item flex w-full items-center justify-between rounded-xl hover:bg-white/20 p-2 cursor-pointer transition-all duration-500 ease-in-out group `}
+      className={`nav-item flex w-full items-center justify-between rounded-xl hover:bg-white/20 p-2 duration-500 cursor-pointer transition-all  focus:bg-white/20 ease-in-out group `}
       onMouseEnter={() => setHoveredItem(item.id)}
       onMouseLeave={() => setHoveredItem(null)}
     >
-      <div className="main flex items-center gap-2 group-hover:gap-3">
-        <div className="icon min-w-[24px] transition-all duration-500">
+      <div className="main flex items-center gap-2 group-hover:gap-3 transition-all duration-500 ease-in-out">
+        <div
+          className={`icon min-w-[24px] transition-all duration-500 relative
+            ${isAnimating ? "animate-wiggle" : ""}`}
+        >
           {hoveredItem === item.id ? item.solidIcon : item.regularIcon}
+          {/* Notification dot when collapsed */}
+          {!isExpanded && item.notify && (
+            <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full transition-all duration-500" />
+          )}
+
+          {/* Tooltip for icon name when collapsed */}
+          {!isExpanded && hoveredItem === item.id && (
+            <div className="absolute left-12 bg-black text-white text-sm px-2 py-1 rounded-lg whitespace-nowrap -top-[0px] ml-1">
+              {item.text}
+            </div>
+          )}
         </div>
         <span
-          className={`text-lg font-semibold whitespace-nowrap overflow-hidden transition-all duration-500
-          ${isExpanded ? "w-auto" : "w-0 lg:hidden"}`}
+          className={`text-lg font-semibold origin-left transition-all duration-500 ease-in-out
+            ${
+              isExpanded
+                ? "w-auto opacity-100 translate-x-0"
+                : "w-0 opacity-0 -translate-x-4 hidden"
+            }`}
         >
           {item.text}
         </span>
       </div>
-      {item.notify && isExpanded && (
-        <div className="flex items-center justify-center min-w-[20px] h-[20px] rounded-full bg-red-500 text-xs font-bold">
+
+      {/* Notification counter when expanded */}
+      {item.notify && (
+        <div
+          className={`flex items-center justify-center min-w-[20px] h-[20px] rounded-full bg-red-500 
+            text-xs font-bold transition-all duration-500 ease-in-out right-2
+            ${
+              isExpanded
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-4"
+            }`}
+        >
           {item.notify}
         </div>
       )}
     </div>
   );
 
+  // Close navbar when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        navbarRef.current &&
+        !navbarRef.current.contains(event.target as Node)
+      ) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <>
+    <div className="relative" ref={navbarRef}>
       {/* Mobile Menu Button - Only visible on mobile */}
       <button
         type="button"
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-black rounded-lg text-white"
+        className={`lg:hidden absolute top-4 left-4 z-20 p-2 rounded-lg transition-all duration-500 ${
+          isMobileMenuOpen
+            ? "bg-transparent text-white left-[200px]"
+            : "bg-black text-white"
+        }`}
         onClick={toggleMobileMenu}
         aria-label="Toggle mobile menu"
       >
         <IoMenuOutline size={24} />
       </button>
 
+      {/* Overlay for mobile menu */}
+      {isMobileMenuOpen && (
+        <div
+          className="lg:hidden fixed inset-0 bg-black/50 z-10"
+          onClick={toggleMobileMenu}
+        />
+      )}
+
       <div
         className={`
-        fixed lg:relative
+        fixed lg:relative z-30
         ${
           isMobileMenuOpen
             ? "translate-x-0 opacity-100 h-0"
@@ -375,40 +475,42 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({className}) => {
         ${className || ""}
       `}
       >
-        {/* Logo Section */}
-        <div className="w-full flex items-center justify-between p-2">
-          <div className="flex items-center gap-2">
-            <Image
-              src={Logo}
-              alt="logo"
-              width={30}
-              height={30}
-              className="min-w-[30px] h-[30px] object-contain rounded-full"
-            />
-            <span
-              className={`text-xl font-bold whitespace-nowrap overflow-hidden transition-all duration-300
+        <div className="top">
+          {/* Logo Section */}
+          <div className="w-full flex items-center justify-between p-2">
+            <div className="flex items-center gap-2">
+              <Image
+                src={Logo}
+                alt="logo"
+                width={30}
+                height={30}
+                className="min-w-[30px] h-[30px] object-contain rounded-full"
+              />
+              <span
+                className={`text-xl font-bold whitespace-nowrap overflow-hidden transition-all duration-300
               ${isExpanded ? "w-auto" : "w-0 lg:hidden"}`}
+              >
+                Panda Academy
+              </span>
+            </div>
+
+            {/* Collapse Toggle Button - Hidden on mobile */}
+            <button
+              type="button"
+              className="hidden lg:block p-1 hover:bg-white/40 rounded-lg absolute -right-[20px] bg-black/40 hover:text-black"
+              onClick={toggleSidebar}
+              aria-label="Toggle sidebar"
             >
-              Panda Academy
-            </span>
+              <IoMenuOutline size={20} />
+            </button>
           </div>
 
-          {/* Collapse Toggle Button - Hidden on mobile */}
-          <button
-            type="button"
-            className="hidden lg:block p-1 hover:bg-white/20 rounded-lg absolute -right-[20px] bg-black/20 hover:text-black"
-            onClick={toggleSidebar}
-            aria-label="Toggle sidebar"
-          >
-            <IoMenuOutline size={20} />
-          </button>
-        </div>
-
-        {/* Navigation Items */}
-        <div className="nav-items flex flex-col w-full h-full items-start justify-start py-4 my-5 gap-2 transition-all duration-500 ease-in-out">
-          {navItems.map((item) => (
-            <NavItem key={item.id} item={item} />
-          ))}
+          {/* Navigation Items */}
+          <div className="nav-items flex flex-col w-full h-full items-start justify-start py-4 my-5 gap-2 transition-all duration-500 ease-in-out">
+            {navItems.map((item) => (
+              <NavItem key={item.id} item={item} />
+            ))}
+          </div>
         </div>
 
         {/* Extra Items */}
@@ -418,6 +520,6 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({className}) => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
