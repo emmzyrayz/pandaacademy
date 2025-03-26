@@ -101,7 +101,7 @@ export default function RootLayout({
                     </div>
                   </div>
                 </div>
-                <div className="user-summ"></div>
+                <div className="user-summa"></div>
               </div>
             </div>
           </main>
