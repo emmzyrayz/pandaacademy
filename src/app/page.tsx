@@ -4,7 +4,8 @@ import { TopCourse } from '@/components/courses/page';
 import { ShortMenu } from '@/components/menu-tab/page';
 import { HmNavbar } from '@/components/navbar/page';
 import { redirect } from 'next/navigation';
-import {BlogSection} from "@/components/blogs/page";
+import {BlogSection, SocialMediaSection} from "@/components/blogs/page";
+import { Footer } from '@/components/footer/page';
 
 // Create a custom hook for scroll behavior
 const useScrollBehavior = (delay = 3000) => {
@@ -60,9 +61,10 @@ export default function Home() {
   // redirect("/landing-page");
 
   return (
-    <div className="flex flex-row items-start min-h-screen">
-      <div
-        className={`transition-all duration-300 ease-in-out fixed top-0 left-0 h-screen z-50
+    <div className="flex flex-col items-center ">
+      <div className="flex flex-row items-start min-h-screen">
+        <div
+        className={`transition-all duration-300 ease-in-out top-0 left-0 h-screen z-50 fixed
           ${isVisible ? "translate-x-0" : "-translate-x-full hidden"}`}
       >
         <HmNavbar
@@ -74,13 +76,7 @@ export default function Home() {
 
       <main
         className={`flex-1 transition-all duration-100 ease-in-out py-3
-          ${
-            isVisible && isExpanded
-              ? "ml-[240px]"
-              : isVisible
-              ? "ml-[60px]"
-              : "ml-0"
-          }`}
+         `}
       >
         {/* Banner takes full width of the content area */}
         <section className="w-full">
@@ -93,10 +89,36 @@ export default function Home() {
         </section>
 
         {/* Blog component */}
-        <section className="blog">
+        <section className="blog hidden">
           <BlogSection />
         </section>
+
+        <section className="social hidden">
+          <main className="py-8">
+            {/* Show all recent posts */}
+            <SocialMediaSection title="Latest Updates" />
+
+            {/* Show only posts with specific tags */}
+            <SocialMediaSection
+              title="Web Development Posts"
+              filterByTag={["Web Development", "Frontend"]}
+              limit={4}
+            />
+
+            {/* Show only posts from specific authors */}
+            <SocialMediaSection
+              title="Teacher Updates"
+              filterByAuthor={[1, 2, 3]}
+              showLoadMore={false}
+            />
+          </main>
+        </section>
       </main>
+      </div>
+
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }

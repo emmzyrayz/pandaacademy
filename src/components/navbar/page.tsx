@@ -289,7 +289,7 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({
       solidIcon: <FaBell size={24} />,
       text: "Notification",
       notify: 8,
-      url: "#",
+      url: "notification",
     },
     {
       id: "settings",
@@ -297,7 +297,7 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({
       solidIcon: <IoSettings size={24} />,
       text: "Settings",
       notify: 8,
-      url: "#",
+      url: "settings",
     },
     {
       id: "profile",
@@ -305,7 +305,7 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({
       solidIcon: <FaUser size={24} />,
       text: "Profile",
       notify: 8,
-      url: "#",
+      url: "account",
     },
     {
       id: "package",
@@ -332,14 +332,15 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({
       solidIcon: <FaQuestionCircle size={24} />,
       text: "Support",
       notify: 8,
-      url: '#',
+      url: 'support',
     },
     {
       id: "logout",
       regularIcon: <CiLogout size={24} />,
       solidIcon: <IoLogOut size={24} />,
       text: "Logout",
-      
+      notify: 8,
+      url: '#',
     },
   ];
 
@@ -363,56 +364,113 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({
   };
 
   const NavItem: React.FC<NavItemProps> = ({item}) => (
-    <div
-      className={`nav-item flex w-full items-center justify-between rounded-xl hover:bg-white/20 p-2 duration-500 cursor-pointer transition-all  focus:bg-white/20 ease-in-out group `}
-      onMouseEnter={() => setHoveredItem(item.id)}
-      onMouseLeave={() => setHoveredItem(null)}
-    >
-      <div className="main flex items-center gap-2 group-hover:gap-3 transition-all duration-500 ease-in-out">
-        <div
-          className={`icon min-w-[24px] transition-all duration-500 relative
+    <>
+      {item.url ? (
+        <Link href={`/${item.url}`}>
+          <div
+            className={`nav-item flex w-full items-center justify-between rounded-xl hover:bg-white/20 p-2 duration-500 cursor-pointer transition-all  focus:bg-white/20 ease-in-out group `}
+            onMouseEnter={() => setHoveredItem(item.id)}
+            onMouseLeave={() => setHoveredItem(null)}
+          >
+            <div className="main flex items-center gap-2 group-hover:gap-3 transition-all duration-500 ease-in-out">
+              <div
+                className={`icon min-w-[24px] transition-all duration-500 relative
             ${isAnimating ? "animate-wiggle" : ""}`}
-        >
-          {hoveredItem === item.id ? item.solidIcon : item.regularIcon}
-          {/* Notification dot when collapsed */}
-          {!isExpanded && item.notify && (
-            <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full transition-all duration-500" />
-          )}
+              >
+                {hoveredItem === item.id ? item.solidIcon : item.regularIcon}
+                {/* Notification dot when collapsed */}
+                {!isExpanded && item.notify && (
+                  <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full transition-all duration-500" />
+                )}
 
-          {/* Tooltip for icon name when collapsed */}
-          {!isExpanded && hoveredItem === item.id && (
-            <div className="absolute left-12 bg-black text-white text-sm px-2 py-1 rounded-lg whitespace-nowrap -top-[0px] ml-1">
-              {item.text}
-            </div>
-          )}
-        </div>
-        <span
-          className={`text-lg font-semibold origin-left transition-all duration-500 ease-in-out
+                {/* Tooltip for icon name when collapsed */}
+                {!isExpanded && hoveredItem === item.id && (
+                  <div className="absolute left-12 bg-black text-white text-sm px-2 py-1 rounded-lg whitespace-nowrap -top-[0px] ml-1">
+                    {item.text}
+                  </div>
+                )}
+              </div>
+              <span
+                className={`text-lg font-semibold origin-left transition-all duration-500 ease-in-out
             ${
-              isExpanded
+              isMobileMenuOpen || isExpanded
                 ? "w-auto opacity-100 translate-x-0"
                 : "w-0 opacity-0 -translate-x-4 hidden"
             }`}
-        >
-          {item.text}
-        </span>
-      </div>
+              >
+                {item.text}
+              </span>
+            </div>
 
-      {/* Notification counter when expanded */}
-      {item.notify && (
-        <div
-          className={`flex items-center justify-center min-w-[20px] h-[20px] rounded-full bg-red-500 
+            {/* Notification counter when expanded */}
+            {item.notify && (
+              <div
+                className={`flex items-center justify-center min-w-[20px] h-[20px] rounded-full bg-red-500 
             text-xs font-bold transition-all duration-500 ease-in-out right-2
             ${
-              isExpanded
+              isMobileMenuOpen || isExpanded
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 -translate-y-4"
             }`}
+              >
+                {item.notify}
+              </div>
+            )}
+          </div>
+        </Link>
+      ) : (
+        <div
+          className={`nav-item flex w-full items-center justify-between rounded-xl hover:bg-white/20 p-2 duration-500 cursor-pointer transition-all  focus:bg-white/20 ease-in-out group `}
+          onMouseEnter={() => setHoveredItem(item.id)}
+          onMouseLeave={() => setHoveredItem(null)}
         >
-          {item.notify}
+          <div className="main flex items-center gap-2 group-hover:gap-3 transition-all duration-500 ease-in-out">
+            <div
+              className={`icon min-w-[24px] transition-all duration-500 relative
+            ${isAnimating ? "animate-wiggle" : ""}`}
+            >
+              {hoveredItem === item.id ? item.solidIcon : item.regularIcon}
+              {/* Notification dot when collapsed */}
+              {!isExpanded && item.notify && (
+                <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full transition-all duration-500" />
+              )}
+
+              {/* Tooltip for icon name when collapsed */}
+              {!isExpanded && hoveredItem === item.id && (
+                <div className="absolute left-12 bg-black text-white text-sm px-2 py-1 rounded-lg whitespace-nowrap -top-[0px] ml-1">
+                  {item.text}
+                </div>
+              )}
+            </div>
+            <span
+              className={`text-lg font-semibold origin-left transition-all duration-500 ease-in-out
+            ${
+              isMobileMenuOpen || isExpanded
+                ? "w-auto opacity-100 translate-x-0"
+                : "w-0 opacity-0 -translate-x-4 hidden"
+            }`}
+            >
+              {item.text}
+            </span>
+          </div>
+
+          {/* Notification counter when expanded */}
+          {item.notify && (
+            <div
+              className={`flex items-center justify-center min-w-[20px] h-[20px] rounded-full bg-red-500 
+            text-xs font-bold transition-all duration-500 ease-in-out right-2
+            ${
+              isMobileMenuOpen || isExpanded
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-4"
+            }`}
+            >
+              {item.notify}
+            </div>
+          )}
         </div>
       )}
-    </div>
+    </>
   );
 
   // Close navbar when clicking outside
@@ -467,7 +525,9 @@ export const HmNavbar: React.FC<HmNavbarProps> = ({
         transition-all duration-500 ease-in-out
         flex flex-col w-[240px] h-full min-h-[98vh] p-1 my-1 ml-1
         ${
-          isExpanded
+          isMobileMenuOpen
+            ? "w-[240px] items-start"
+            : isExpanded
             ? "lg:w-[240px] items-start justify-between"
             : "lg:w-[60px] items-center justify-between"
         }
