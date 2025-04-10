@@ -1,0 +1,61 @@
+.cal-body {
+
+    .week-days {
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px !important;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+    .days {
+        span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            padding: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 50%;
+            transition:  all 500ms ease-in-out;
+            cursor: pointer;
+
+            .dots {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                height: 8px;
+                bottom: 4px;
+
+                .dot {
+                    content: '';
+                    display: flex;
+                    padding: 3px;
+                    /* outline: solid 0.5px white; */
+                    border-radius: 50%;
+                    /* background: green; */
+                }
+            }
+        }
+
+        span:hover {
+            background: rgba(0, 0, 0, 0.2);
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .highlight {
+        background: rgba(0, 0, 0, 0.7);
+        color: rgba(255, 255, 255, 1);
+    }
+
+
+}
