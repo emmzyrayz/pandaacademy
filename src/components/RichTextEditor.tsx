@@ -6,7 +6,7 @@ import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
 import TextAlign from "@tiptap/extension-text-align";
 import {TextStyle} from "@tiptap/extension-text-style";
-import {FontSize} from "@tiptap/extension-font-size";
+import {FontSize} from "@/extension/fontSizeExtension";
 import {FontFamily} from "@tiptap/extension-font-family";
 import Color from "@tiptap/extension-color";
 import Link from "@tiptap/extension-link";
